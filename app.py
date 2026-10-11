@@ -67,11 +67,66 @@ def pick_customer(d, key):
 st.sidebar.title('Business Lens')
 st.sidebar.caption('Revenue, customer value and support effort')
 source = st.sidebar.radio('Input data', ['Sample data', 'Upload CSV files'])
+page = st.sidebar.radio('View', ['Intro', 'Business overview', 'Customers', 'Services', 'Support insights',
+                                  'Product quality', 'Support team', 'FAQ opportunities', 'Data & definitions'])
+if source == 'Upload CSV files':
+    st.sidebar.caption('Upload the complete set. Use name__2025.csv for annual exports of the same table. Files are kept in this session, not written to disk.')
+    uploads = st.sidebar.file_uploader('CSV inputs', type='csv', accept_multiple_files=True)
+if page == 'Intro':
+    st.title('Welcome to Business Lens')
+    st.caption('Understand what your customers earn for your business and what it costs to serve them.')
+    st.write('Business Lens brings together software sales, support fees, consulting work and the time spent helping customers. It helps you see how your business is doing, which customers leave the most money after delivery costs, and where you could improve.')
+    st.info('Start with Sample data to explore five years of fictional business records (2021–2025). No upload or setup is needed to try the dashboard.')
+
+    st.subheader('What can you learn?')
+    left, right = st.columns(2)
+    with left:
+        st.markdown('**Where does the money go?**')
+        st.write('Compare revenue with delivery costs and operating expenses. See how results change from one year to the next.')
+        st.markdown('**Which customers are worth more to the business?**')
+        st.write('Rank customers by the money left after serving them. Compare support effort, product usage, training and custom changes to understand what to investigate.')
+    with right:
+        st.markdown('**Where is the team spending time?**')
+        st.write('Explore consulting hours, customer questions and product defects. Find product areas with repeated problems or gaps in testing and guidance.')
+        st.markdown('**Which questions might an FAQ agent help answer?**')
+        st.write('Review repeated questions across three years and estimate time that might be saved. This is a planning tool; it does not run an FAQ agent.')
+
+    st.subheader('How to get started')
+    st.markdown("""1. Leave **Input data** set to **Sample data** for your first visit.
+2. Choose **Business overview** under **View** in the sidebar to see revenue, costs and profit.
+3. Select a **Year** to review that period. YoY means the change from the previous year.
+4. Open **Customers** to compare the most and least profitable accounts, then explore support and product quality to look for reasons.
+5. Use the filters where available and **Download this table** to save a table as a CSV file.""")
+
+    st.subheader('Choose a view')
+    st.table(pd.DataFrame([
+        ('Business overview', 'How much did we earn, what did it cost, and how did profit change?'),
+        ('Customers', 'Which customers leave the most or least money after delivery costs?'),
+        ('Services', 'Which consulting projects earn money, and which use more hours than planned?'),
+        ('Support insights', 'What do customers ask about, and which topics take the most effort?'),
+        ('Product quality', 'Where do defects occur, who finds them, and what is still unresolved?'),
+        ('Support team', 'How is work shared, how quickly do we respond, and what do customers think?'),
+        ('FAQ opportunities', 'Which repeated questions could be worth a trial with an FAQ agent?'),
+        ('Data & definitions', 'What data was loaded, how are figures calculated, and do costs add up?'),
+    ], columns=['View', 'What it helps you answer']), hide_index=True)
+
+    with st.expander('A few terms in plain language'):
+        st.markdown('**Revenue:** income recorded from software licenses, annual support and consulting services.')
+        st.markdown('**Delivery costs:** recorded costs of providing licenses, consulting, support and engineering fixes. Time costs use hours worked multiplied by the hourly cost.')
+        st.markdown('**Customer contribution:** customer revenue minus the delivery costs assigned to that customer. Shared business expenses and engineering costs that cannot be assigned to customers are deducted at the business level.')
+        st.markdown('**Operating profit:** total revenue minus all recorded delivery costs and operating expenses, before tax and financing.')
+        st.markdown('**Margin:** the money left as a percentage of revenue. **Handling time** is time spent working on a case, rather than the full time a customer waits for a resolution.')
+
+    with st.expander('Use your own CSV files'):
+        st.write('Open Data & definitions with Sample data selected and download the CSV set to see the required files and columns. Replace the fictional records with your own data using the same structure.')
+        st.write('Choose Upload CSV files and upload the complete set of 15 tables together, including headers for tables with no records. Use complete calendar years; the app checks the files and explains any errors before showing results. Select a dashboard view to review them.')
+        st.caption('Keep real customer records out of a public GitHub repository. Use the fictional sample for a public demonstration.')
+
+    st.caption('Results depend on the data provided. Comparisons suggest questions to investigate, not proven causes. FAQ savings are estimates, and team figures should be read alongside case difficulty and survey response rates.')
+    st.stop()
 if source == 'Sample data':
     files = tuple((p.name, p.read_bytes()) for p in sorted((ROOT/'data'/'sample').glob('*.csv')))
 else:
-    st.sidebar.caption('Upload the complete set. Use name__2025.csv for annual exports of the same table. Files are kept in this session, not written to disk.')
-    uploads = st.sidebar.file_uploader('CSV inputs', type='csv', accept_multiple_files=True)
     if not uploads:
         st.title('Load your business data')
         st.write('Select the CSV files together. Each table needs a file, even if it contains only its headers.')
@@ -89,8 +144,6 @@ except DataError as exc:
 
 years = sorted(d['periods'].year.tolist(), reverse=True)
 year = st.sidebar.selectbox('Year', years)
-page = st.sidebar.radio('View', ['Business overview', 'Customers', 'Services', 'Support insights',
-                                  'Product quality', 'Support team', 'FAQ opportunities', 'Data & definitions'])
 st.sidebar.caption(f'{len(d["customers"])} customers · {min(years)}–{max(years)}')
 st.sidebar.caption('Fictional sample data' if source=='Sample data' else 'Uploaded data · validated')
 st.title(page)

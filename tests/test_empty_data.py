@@ -20,6 +20,7 @@ def test_header_only_transaction_inputs():
     assert annual['Operating margin %'].isna().all()
     app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=30).run()
     app.sidebar.radio[0].set_value('Upload CSV files').run()
+    app.sidebar.radio[1].set_value('Business overview').run()
     app.sidebar.file_uploader[0].set_value([(n,b,'text/csv') for n,b in files]).run()
     for view in ['Business overview','Customers','Services','Support insights','Product quality','Support team','FAQ opportunities','Data & definitions']:
         app.sidebar.radio[1].set_value(view).run()

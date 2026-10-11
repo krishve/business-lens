@@ -50,9 +50,9 @@ python3.13 -m venv .venv
 .venv/bin/python -m streamlit run app.py
 ```
 
-Open <http://localhost:8501>. The dashboard starts with the bundled sample data. Choose a year and a view in the sidebar; no upload is needed to try it.
+Open <http://localhost:8501>. The dashboard opens on the Intro page, which explains the business questions, views and basic terms. Select Business overview in the sidebar, then choose a year; no upload is needed to try the bundled sample data.
 
-The server listens on the local computer only. Stop it with Ctrl+C in its terminal. If port 8501 is busy, add `--server.port 8502` to the Streamlit command and open that port instead.
+For local-only access, add `--server.address=127.0.0.1` to the Streamlit command. Stop it with Ctrl+C in its terminal. If port 8501 is busy, add `--server.port 8502` to the Streamlit command and open that port instead.
 
 ## Sample data
 
@@ -73,6 +73,7 @@ One file holds all years for a table. Year selectors use dates in the records, n
 
 | View | What it shows |
 | --- | --- |
+| Intro | A plain-language introduction, getting-started steps, a guide to each view and key terms |
 | Business overview | Five-year revenue mix, year-over-year growth, delivery costs, operating profit and areas to review |
 | Customers | Most-to-least customer contribution, cost and revenue breakdown, customer history, and comparisons of usage, training and customization |
 | Services | Project revenue, labor cost, contribution and hours compared with budget |
@@ -82,7 +83,7 @@ One file holds all years for a table. Year selectors use dates in the records, n
 | FAQ opportunities | Three-year topic volumes, eligibility rules and an adjustable estimate of time that could be freed |
 | Data & definitions | Input counts, a download of the current CSV set, definitions and cost reconciliation |
 
-The year selector applies to all views. Customer and product-area filters are local to the views that show them. They do not silently change the business-wide financial totals.
+The year selector applies to the data views; the Intro page is a general guide. Customer and product-area filters are local to the views that show them. They do not silently change the business-wide financial totals.
 
 ## Input files
 
