@@ -12,7 +12,7 @@ def test_all_pages_render(year):
     assert app.title[0].value == 'Welcome to Business Lens'
     app.sidebar.radio[1].set_value('Business overview').run()
     app.sidebar.selectbox[0].select(year).run()
-    for view in ['Business overview','Customers','Services','Support insights','Product quality','Support team','FAQ opportunities','Data & definitions']:
+    for view in ['Ask Lenny','Business overview','Customers','Services','Support insights','Product quality','Support team','FAQ opportunities','Data & definitions']:
         app.sidebar.radio[1].set_value(view).run()
         assert not app.exception, (view,[x.message for x in app.exception])
 

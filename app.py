@@ -8,13 +8,16 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 from data_loader import DataError, read_files
+from lenny_ui import render_lenny, ASSET
+from floating_lenny import render_floating_lenny
+from ui_theme import brand_sidebar, style_chart, display_frame
 from schema import SCHEMAS, fields
 from metrics import (revenue_rows, cost_rows, customer_results, annual_results,
                      case_view, backlog, automation_opportunities, focus_areas, ratio)
 
 ROOT = Path(__file__).resolve().parent
 COLORS = ['#635BDB', '#138A83', '#DB9841', '#B85264', '#617A9C']
-st.set_page_config(page_title='Business Lens', page_icon='📊', layout='wide')
+st.set_page_config(page_title='Business Lens | Avenlo Software', page_icon='📊', layout='wide')
 st.markdown('''<style>
 div[data-testid="stMetric"] {border:1px solid #8899aa40;border-radius:10px;padding:16px}
 div[data-testid="stMetricValue"] {font-size:1.7rem}
@@ -41,14 +44,14 @@ def percent(value):
 def chart(fig):
     fig.update_layout(margin=dict(l=10, r=10, t=35, b=15), font=dict(size=13),
                       legend_title_text='', colorway=COLORS, height=350)
-    st.plotly_chart(fig, width='stretch', config={'displaylogo': False})
+    st.plotly_chart(style_chart(fig), width='stretch', theme=None, config={'displaylogo': False})
 
 
 def show_table(df, key, height='auto'):
     display = df.copy()
     for col in display.select_dtypes('number'):
         display[col] = display[col].round(2)
-    st.dataframe(display, hide_index=True, width='stretch', height=height)
+    display_frame(display, hide_index=True, width='stretch', height=height)
     st.download_button('Download this table', display.to_csv(index=False).encode('utf-8'),
                        file_name=f'{key}.csv', mime='text/csv', key=f'download_{key}')
 
@@ -64,19 +67,28 @@ def pick_customer(d, key):
     return options[selected]
 
 
-st.sidebar.title('Business Lens')
-st.sidebar.caption('Revenue, customer value and support effort')
+brand_sidebar()
 source = st.sidebar.radio('Input data', ['Sample data', 'Upload CSV files'])
-page = st.sidebar.radio('View', ['Intro', 'Business overview', 'Customers', 'Services', 'Support insights',
-                                  'Product quality', 'Support team', 'FAQ opportunities', 'Data & definitions'])
+year_slot = st.sidebar.empty()
+page = st.sidebar.radio('View', ['Intro', 'Ask Lenny', 'Business overview', 'Customers', 'Services', 'Support insights',
+                                  'Product quality', 'Support team', 'FAQ opportunities', 'Data & definitions'], key='primary_navigation')
 if source == 'Upload CSV files':
     st.sidebar.caption('Upload the complete set. Use name__2025.csv for annual exports of the same table. Files are kept in this session, not written to disk.')
     uploads = st.sidebar.file_uploader('CSV inputs', type='csv', accept_multiple_files=True)
 if page == 'Intro':
     st.title('Welcome to Business Lens')
+    st.caption('AVENLO SOFTWARE · A fictional software business')
     st.caption('Understand what your customers earn for your business and what it costs to serve them.')
     st.write('Business Lens brings together software sales, support fees, consulting work and the time spent helping customers. It helps you see how your business is doing, which customers leave the most money after delivery costs, and where you could improve.')
     st.info('Start with Sample data to explore five years of fictional business records (2021–2025). No upload or setup is needed to try the dashboard.')
+
+    with st.container(border=True):
+        mascot, welcome = st.columns([1, 5], vertical_alignment='center')
+        with mascot:
+            st.image(str(ASSET), width=110)
+        with welcome:
+            st.subheader('Meet Lenny, your guide to the numbers')
+            st.write('Click the floating Ask Lenny button on any page for help with what you are viewing. Or open Ask Lenny in the sidebar to choose a business question and see an answer based on your data, with the supporting figures. No AI service or API key is needed.')
 
     st.subheader('What can you learn?')
     left, right = st.columns(2)
@@ -100,6 +112,7 @@ if page == 'Intro':
 
     st.subheader('Choose a view')
     st.table(pd.DataFrame([
+        ('Ask Lenny', 'Choose a question and get a plain-language answer with supporting figures.'),
         ('Business overview', 'How much did we earn, what did it cost, and how did profit change?'),
         ('Customers', 'Which customers leave the most or least money after delivery costs?'),
         ('Services', 'Which consulting projects earn money, and which use more hours than planned?'),
@@ -123,6 +136,19 @@ if page == 'Intro':
         st.caption('Keep real customer records out of a public GitHub repository. Use the fictional sample for a public demonstration.')
 
     st.caption('Results depend on the data provided. Comparisons suggest questions to investigate, not proven causes. FAQ savings are estimates, and team figures should be read alongside case difficulty and survey response rates.')
+    if st.session_state.get('lenny_panel_open', False):
+        intro_files = tuple((p.name, p.read_bytes()) for p in sorted((ROOT/'data'/'sample').glob('*.csv'))) if source == 'Sample data' else tuple((f.name, f.getvalue()) for f in uploads or [])
+        if intro_files:
+            try:
+                intro_data, intro_revenue, intro_costs, _ = prepare(intro_files)
+                intro_year = max(intro_data['periods'].year)
+                render_floating_lenny(page, intro_data, intro_year, customer_results(intro_data, intro_year, intro_revenue, intro_costs), source)
+            except DataError:
+                render_floating_lenny(page, source=source, unavailable='The uploaded files need checking. Open a data view to see the input errors.')
+        else:
+            render_floating_lenny(page, source=source, unavailable='Upload the complete CSV set to enable calculated answers.')
+    else:
+        render_floating_lenny(page, source=source)
     st.stop()
 if source == 'Sample data':
     files = tuple((p.name, p.read_bytes()) for p in sorted((ROOT/'data'/'sample').glob('*.csv')))
@@ -132,6 +158,7 @@ else:
         st.write('Select the CSV files together. Each table needs a file, even if it contains only its headers.')
         st.code('\n'.join(name+'.csv' for name in SCHEMAS))
         st.info('Use the sample CSV headers as templates. Full calendar years only. Do not include real customer data in a public repository.')
+        render_floating_lenny(page, source=source, unavailable='Upload the complete CSV set to enable calculated answers. I can still explain this page.')
         st.stop()
     files = tuple((f.name, f.getvalue()) for f in uploads)
 try:
@@ -140,10 +167,11 @@ except DataError as exc:
     st.title('Check the input files')
     for message in str(exc).splitlines():
         st.error(message)
+    render_floating_lenny(page, source=source, unavailable='Correct the input errors shown on the page before asking for figures. I will not use old sample results in their place.')
     st.stop()
 
 years = sorted(d['periods'].year.tolist(), reverse=True)
-year = st.sidebar.selectbox('Year', years)
+year = year_slot.selectbox('Year', years)
 st.sidebar.caption(f'{len(d["customers"])} customers · {min(years)}–{max(years)}')
 st.sidebar.caption('Fictional sample data' if source=='Sample data' else 'Uploaded data · validated')
 st.title(page)
@@ -152,8 +180,12 @@ current = annual.loc[annual.Year.eq(year)].iloc[0]
 customers = customer_results(d, year, revenue, costs)
 cases = case_view(d, year)
 cutoff = pd.Timestamp(year, 12, 31, 23, 59, 59)
+lenny_context = {}
 
-if page == 'Business overview':
+if page == 'Ask Lenny':
+    render_lenny(d, year, customers, source)
+
+elif page == 'Business overview':
     kpis([('Total revenue', money(current.Revenue), 'License + support + services revenue.'),
           ('Revenue YoY', percent(current['Revenue YoY %']), 'Change against the immediately preceding complete calendar year. N/A when absent or zero.'),
           ('Operating profit', money(current['Operating profit']), 'Revenue minus captured delivery costs and operating expenses. Before tax and financing.'),
@@ -196,7 +228,7 @@ elif page == 'Customers':
         groups = []
         for label, group in [('Top 3 by contribution', customers.head(3)), ('Bottom 3 by contribution', customers.tail(3))]:
             groups.append({'Group':label, 'Customers':len(group), **group[compare_fields].mean().to_dict()})
-        st.dataframe(pd.DataFrame(groups).round(1), hide_index=True, width='stretch')
+        display_frame(pd.DataFrame(groups).round(1), hide_index=True, width='stretch')
         st.caption('Unweighted means across each group. Blanks are excluded from each mean. Larger accounts can rank higher in contribution even with a lower margin.')
     driver = st.selectbox('Compare with contribution margin', ['customizations','training_hours','Usage %','Cases / 100 active users','Support cost / $1k support revenue'])
     plot = customers.dropna(subset=[driver, 'Margin %'])
@@ -204,6 +236,7 @@ elif page == 'Customers':
         chart(px.scatter(plot, x=driver, y='Margin %', color='industry', hover_name='customer_name', size=plot.Revenue.clip(lower=1), color_discrete_sequence=COLORS))
     show_table(customers[['customer_name','Margin %','licensed_users','active_users','Usage %','customizations','training_hours','Cases / 100 active users','Support cost / $1k support revenue']], 'customer_drivers')
     cid = pick_customer(d, 'customer_detail')
+    lenny_context['customer_id'] = cid
     if cid:
         history = []
         for y in sorted(years):
@@ -240,6 +273,7 @@ elif page == 'Support insights':
     cid = pick_customer(d, 'support_customer')
     cohort = case_view(d, year, cid)
     area = st.selectbox('Product area', ['All areas']+sorted(d['topics'].product_area.unique()))
+    lenny_context.update(customer_id=cid, product_area=area)
     if area != 'All areas':
         cohort = cohort[cohort.product_area.eq(area)]
     known = cohort.handling_minutes.dropna()
@@ -300,6 +334,7 @@ elif page == 'FAQ opportunities':
     left,right=st.columns(2)
     success=left.slider('Assumed successful self-service rate (%)',0,100,60,5)/100
     maintenance=right.number_input('Annual review and maintenance hours per topic',min_value=0.0,value=4.0,step=1.0)
+    lenny_context.update(success=success, maintenance_hours=maintenance)
     opportunities=automation_opportunities(d,year,success,maintenance)
     candidates=opportunities[opportunities.Recommendation.eq('FAQ pilot candidate')]
     kpis([('Pilot candidates',str(len(candidates)),'Documented answer-only questions; at least 12 eligible cases in the selected year and three consecutive years of history.'),
@@ -331,3 +366,6 @@ else:
     expected=labor+d['license_revenue'].delivery_cost_usd.sum()
     st.success(f'Cost reconciliation: {money(costs.cost_usd.sum())} allocated and unallocated costs = {money(expected)} recorded delivery costs.')
     st.caption('Validation checks schema, keys, references, dates, numeric ranges and activity targets. It cannot verify whether uploaded records are complete or accounting classifications are correct.')
+
+
+render_floating_lenny(page, d, year, customers, source, **lenny_context)

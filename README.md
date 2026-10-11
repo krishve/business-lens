@@ -73,6 +73,7 @@ One file holds all years for a table. Year selectors use dates in the records, n
 
 | View | What it shows |
 | --- | --- |
+| Ask Lenny | Guided questions with calculated answers, supporting figures and a friendly character; no LLM or API key |
 | Intro | A plain-language introduction, getting-started steps, a guide to each view and key terms |
 | Business overview | Five-year revenue mix, year-over-year growth, delivery costs, operating profit and areas to review |
 | Customers | Most-to-least customer contribution, cost and revenue breakdown, customer history, and comparisons of usage, training and customization |
@@ -239,3 +240,27 @@ The repository contains the application, documentation, tests and fictional samp
 The `.gitignore` excludes the Python environment, caches, secrets, temporary files and `data/private/`. Keep real customer exports outside the tracked sample folder, and review staged files before committing changes.
 
 No license has been selected yet. Hosting for multiple users would need authentication, access controls and a review of how uploaded data is kept.
+
+## Ask Lenny
+
+Lenny is a rule-based guide to the loaded data. Choose one of 11 questions and a year, and select a customer for the customer breakdown. Answers update with the selected data and show the calculation, supporting figures and a CSV download. Lenny covers customer contribution, annual profit changes, revenue sources, support effort, unresolved defects, project hours, FAQ trial candidates and suggested areas to review.
+
+The assistant reuses the dashboard calculations. It does not run an LLM, make predictions or send data to an AI service. The floating panel accepts typed questions and matches them to supported topics using explicit phrases. Comparisons explain recorded amounts; they do not prove why a customer behaves a certain way. FAQ estimates use a 60% success assumption and four maintenance hours per topic; the FAQ opportunities page lets you change those assumptions.
+
+`lenny.py` holds the question catalog and answer calculations. `lenny_ui.py` displays the guide. The character is a static asset in `assets/lenny.png`, created with an image generation tool during development; no image generation runs in the app. Asset creation details are in `assets/LENNY.md`.
+
+### Floating Lenny
+
+The Ask Lenny button stays at the bottom-right while you scroll. Open it for help with the current page and relevant guided questions. The panel stays open as you navigate; its previous reply clears when the page, year or filters change. Answers refresh with the selected year and data source.
+
+On Customers, a customer breakdown uses the account selected in the page history filter; rankings still use all customers. On Support insights, answers use both the customer and product-area filters. FAQ answers use the page's success and maintenance assumptions. On Intro, Lenny uses the latest loaded year and offers quick questions. Before valid uploads, it provides page guidance without calculating figures.
+
+Lenny receives page and filter values directly from the app; it does not capture the screen. `floating_lenny.py` implements the panel with Streamlit controls and scoped CSS. Type a question or use a suggestion button. The phrase matcher supports explicit loaded years, known customer names and product areas. Unsupported requests and ambiguous questions receive clarification. A new question replaces the previous exchange; this is not unrestricted chat.
+
+### Appearance
+
+The app uses the fictional company name Avenlo Software and an original geometric logo (`assets/avenlo-logo.svg`). The company is a demonstration brand, not a real organization represented by the sample records.
+
+Use the sidebar's Dark mode switch to change the appearance for your session. The choice stays while moving between pages and does not affect other users. App styles, Plotly charts, data cells and Lenny's panel follow the switch. A fresh session starts in light mode. `ui_theme.py` keeps these presentation choices in one place. Native table toolbars may retain Streamlit's own appearance.
+
+The floating assistant uses `lenny_intents.py` to match phrases. Examples: “Which customers are losing money?”, “How profitable is Aster in 2024?”, “Show support hours”, and “Explain this page”. Named customers and explicit years override the corresponding page defaults for that answer; the displayed scope makes this visible. Future predictions, unavailable years, multiple-topic requests and percentage changes in text are not guessed. Change FAQ assumptions on the FAQ page.

@@ -22,6 +22,6 @@ def test_header_only_transaction_inputs():
     app.sidebar.radio[0].set_value('Upload CSV files').run()
     app.sidebar.radio[1].set_value('Business overview').run()
     app.sidebar.file_uploader[0].set_value([(n,b,'text/csv') for n,b in files]).run()
-    for view in ['Business overview','Customers','Services','Support insights','Product quality','Support team','FAQ opportunities','Data & definitions']:
+    for view in ['Ask Lenny','Business overview','Customers','Services','Support insights','Product quality','Support team','FAQ opportunities','Data & definitions']:
         app.sidebar.radio[1].set_value(view).run()
         assert not app.exception, (view,[x.message for x in app.exception])
