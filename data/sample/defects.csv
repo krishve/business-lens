@@ -1,0 +1,541 @@
+defect_id,topic_id,severity,origin,detected_release,created_at,resolved_at,prevention_gap
+D00001,T06,High,Customer,2.1,2021-02-02T10:00:00,2021-04-22T10:00:00,Missing validation
+D00002,T07,Medium,Customer,2.3,2021-07-20T10:00:00,2021-08-20T10:00:00,Missing integration test
+D00003,T07,Medium,Customer,2.1,2021-03-06T10:00:00,,Missing integration test
+D00004,T08,Low,Customer,2.4,2021-11-28T10:00:00,2021-12-16T10:00:00,Missing regression test
+D00005,T06,Medium,Customer,2.3,2021-08-01T10:00:00,2021-09-08T10:00:00,Missing regression test
+D00006,T06,Medium,Customer,2.4,2021-12-25T10:00:00,2022-03-26T10:00:00,Missing regression test
+D00007,T07,Medium,Customer,2.1,2021-03-14T10:00:00,2021-05-09T10:00:00,Missing regression test
+D00008,T08,Medium,Customer,2.2,2021-04-07T10:00:00,2021-06-28T10:00:00,Missing validation
+D00009,T08,Low,Customer,2.3,2021-09-29T10:00:00,2021-11-18T10:00:00,Missing integration test
+D00010,T07,Medium,Customer,2.3,2021-07-17T10:00:00,2021-07-24T10:00:00,Missing regression test
+D00011,T07,Low,Customer,2.1,2021-01-29T10:00:00,2021-03-14T10:00:00,Missing regression test
+D00012,T08,High,Customer,2.1,2021-03-07T10:00:00,2021-06-05T10:00:00,Missing regression test
+D00013,T07,Low,Customer,2.4,2021-12-23T10:00:00,2022-03-01T10:00:00,Missing integration test
+D00014,T06,High,Customer,2.1,2021-01-09T10:00:00,2021-03-18T10:00:00,Missing validation
+D00015,T06,Low,Customer,2.3,2021-09-29T10:00:00,2021-11-03T10:00:00,Missing validation
+D00016,T06,Low,Customer,2.3,2021-09-13T10:00:00,2021-09-29T10:00:00,Missing integration test
+D00017,T07,Low,Customer,2.1,2021-01-09T10:00:00,2021-04-07T10:00:00,Missing validation
+D00018,T06,High,Customer,2.1,2021-02-15T10:00:00,,Missing integration test
+D00019,T07,High,Customer,2.3,2021-08-16T10:00:00,2021-10-15T10:00:00,Missing integration test
+D00020,T06,Low,Customer,2.4,2021-10-25T10:00:00,2021-11-23T10:00:00,Missing integration test
+D00021,T07,Low,Customer,2.3,2021-09-23T10:00:00,2021-12-28T10:00:00,Missing integration test
+D00022,T07,Medium,Customer,2.1,2021-03-21T10:00:00,2021-06-10T10:00:00,Missing regression test
+D00023,T07,Medium,Customer,2.4,2021-10-17T10:00:00,2021-10-25T10:00:00,Missing integration test
+D00024,T08,Medium,Customer,2.1,2021-01-02T10:00:00,2021-02-01T10:00:00,Missing integration test
+D00025,T06,Low,Customer,2.3,2021-08-30T10:00:00,2021-09-08T10:00:00,Missing regression test
+D00026,T07,High,Customer,2.4,2021-11-26T10:00:00,2022-01-13T10:00:00,Missing regression test
+D00027,T06,Low,Customer,2.4,2021-10-25T10:00:00,2021-12-09T10:00:00,Missing integration test
+D00028,T07,Critical,Customer,2.2,2021-06-06T10:00:00,2021-06-20T10:00:00,Missing regression test
+D00029,T08,Low,Customer,2.3,2021-09-20T10:00:00,2021-11-23T10:00:00,Missing integration test
+D00030,T07,Low,Customer,2.2,2021-06-18T10:00:00,2021-09-23T10:00:00,Missing validation
+D00031,T07,Low,Customer,2.4,2021-11-07T10:00:00,,Missing integration test
+D00032,T07,Medium,Customer,2.1,2021-02-06T10:00:00,,Missing integration test
+D00033,T06,High,Customer,2.3,2021-09-15T10:00:00,2021-09-30T10:00:00,Missing regression test
+D00034,T07,Medium,Customer,2.3,2021-07-06T10:00:00,2021-10-13T10:00:00,Missing integration test
+D00035,T07,Low,Customer,2.2,2021-04-23T10:00:00,2021-06-10T10:00:00,Missing regression test
+D00036,T07,Medium,Customer,2.1,2021-01-02T10:00:00,2021-03-02T10:00:00,Missing regression test
+D00037,T08,Medium,Customer,2.3,2021-09-06T10:00:00,2021-10-08T10:00:00,Missing validation
+D00038,T07,Medium,Customer,2.2,2021-04-26T10:00:00,2021-05-03T10:00:00,Missing integration test
+D00039,T08,Low,Customer,2.2,2021-04-21T10:00:00,2021-07-07T10:00:00,Missing validation
+D00040,T07,High,Customer,2.1,2021-02-10T10:00:00,2021-04-04T10:00:00,Missing integration test
+D00041,T06,Medium,Customer,2.4,2021-11-21T10:00:00,2022-01-25T10:00:00,Missing regression test
+D00042,T07,Medium,Customer,2.2,2021-06-03T10:00:00,2021-07-24T10:00:00,Missing integration test
+D00043,T07,Medium,Customer,2.2,2021-05-22T10:00:00,2021-08-23T10:00:00,Missing regression test
+D00044,T07,Medium,Customer,2.4,2021-12-14T10:00:00,2022-01-17T10:00:00,Missing validation
+D00045,T08,Critical,Customer,2.2,2021-06-07T10:00:00,2021-07-21T10:00:00,Missing regression test
+D00046,T07,Medium,Customer,2.1,2021-03-24T10:00:00,2021-06-21T10:00:00,Missing validation
+D00047,T07,Medium,Customer,2.1,2021-03-21T10:00:00,2021-05-18T10:00:00,Missing validation
+D00048,T06,Medium,Customer,2.2,2021-04-08T10:00:00,2021-06-16T10:00:00,Missing integration test
+D00049,T07,Medium,Customer,2.2,2021-04-02T10:00:00,2021-04-30T10:00:00,Missing integration test
+D00050,T07,Low,Customer,2.3,2021-07-21T10:00:00,2021-10-26T10:00:00,Missing integration test
+D00051,T08,Medium,Customer,2.2,2021-04-16T10:00:00,2021-07-22T10:00:00,Missing validation
+D00052,T08,Medium,Customer,2.4,2021-10-29T10:00:00,2022-01-12T10:00:00,Missing regression test
+D00053,T08,High,Customer,2.1,2021-02-03T10:00:00,2021-05-13T10:00:00,Missing validation
+D00054,T07,High,Customer,2.1,2021-01-08T10:00:00,2021-03-07T10:00:00,Missing validation
+D00055,T08,Medium,Customer,2.1,2021-02-15T10:00:00,2021-04-17T10:00:00,Missing validation
+D00056,T07,Medium,Customer,2.2,2021-04-23T10:00:00,2021-07-27T10:00:00,Missing integration test
+D00057,T06,Low,Customer,2.4,2021-12-23T10:00:00,2022-01-25T10:00:00,Missing integration test
+D00058,T08,High,Customer,2.1,2021-01-02T10:00:00,2021-02-18T10:00:00,Missing regression test
+D00059,T06,Medium,Customer,2.3,2021-08-01T10:00:00,2021-09-14T10:00:00,Missing integration test
+D00060,T08,Low,Customer,2.1,2021-02-24T10:00:00,2021-05-31T10:00:00,Missing regression test
+D00061,T08,Medium,Customer,2.1,2021-03-16T10:00:00,2021-04-02T10:00:00,Missing regression test
+D00062,T07,High,Customer,2.3,2021-07-10T10:00:00,2021-09-01T10:00:00,Missing regression test
+D00063,T06,Medium,Customer,2.3,2021-09-19T10:00:00,2021-12-19T10:00:00,Missing integration test
+D00064,T06,Medium,Customer,2.3,2021-08-22T10:00:00,2021-10-13T10:00:00,Missing validation
+D00065,T08,Low,Customer,2.3,2021-08-25T10:00:00,2021-09-11T10:00:00,Missing integration test
+D00066,T08,Medium,Customer,2.1,2021-02-19T10:00:00,2021-03-28T10:00:00,Missing integration test
+D00067,T08,Medium,Customer,2.3,2021-08-21T10:00:00,2021-10-13T10:00:00,Missing validation
+D00068,T07,Medium,Internal,2.1,2021-01-10T00:00:00,2021-01-30T00:00:00,Missing regression test
+D00069,T07,Medium,Internal,2.1,2021-01-28T00:00:00,2021-02-17T00:00:00,Missing regression test
+D00070,T07,Medium,Internal,2.1,2021-02-15T00:00:00,2021-03-07T00:00:00,Missing regression test
+D00071,T07,Medium,Internal,2.1,2021-03-05T00:00:00,2021-03-25T00:00:00,Missing regression test
+D00072,T07,Medium,Internal,2.1,2021-03-23T00:00:00,2021-04-12T00:00:00,Missing regression test
+D00073,T07,Medium,Internal,2.2,2021-04-10T00:00:00,2021-04-30T00:00:00,Missing regression test
+D00074,T07,Medium,Internal,2.2,2021-04-28T00:00:00,2021-05-18T00:00:00,Missing regression test
+D00075,T07,Medium,Internal,2.2,2021-05-16T00:00:00,2021-06-05T00:00:00,Missing regression test
+D00076,T07,Medium,Internal,2.2,2021-06-03T00:00:00,2021-06-23T00:00:00,Missing regression test
+D00077,T07,Medium,Internal,2.2,2021-06-21T00:00:00,2021-07-11T00:00:00,Missing regression test
+D00078,T07,Medium,Internal,2.3,2021-07-09T00:00:00,2021-07-29T00:00:00,Missing regression test
+D00079,T07,Medium,Internal,2.3,2021-07-27T00:00:00,2021-08-16T00:00:00,Missing regression test
+D00080,T07,Medium,Internal,2.3,2021-08-14T00:00:00,2021-09-03T00:00:00,Missing regression test
+D00081,T07,Medium,Internal,2.3,2021-09-01T00:00:00,2021-09-21T00:00:00,Missing regression test
+D00082,T07,Medium,Internal,2.3,2021-09-19T00:00:00,2021-10-09T00:00:00,Missing regression test
+D00083,T07,Medium,Internal,2.4,2021-10-07T00:00:00,2021-10-27T00:00:00,Missing regression test
+D00084,T07,Medium,Internal,2.4,2021-10-25T00:00:00,2021-11-14T00:00:00,Missing regression test
+D00085,T07,Medium,Internal,2.4,2021-11-12T00:00:00,2021-12-02T00:00:00,Missing regression test
+D00086,T06,Medium,Customer,3.1,2022-01-30T10:00:00,2022-04-08T10:00:00,Missing integration test
+D00087,T08,Medium,Customer,3.2,2022-06-20T10:00:00,2022-08-28T10:00:00,Missing validation
+D00088,T06,Medium,Customer,3.3,2022-09-05T10:00:00,2022-10-25T10:00:00,Missing regression test
+D00089,T08,Low,Customer,3.3,2022-09-17T10:00:00,2022-11-16T10:00:00,Missing integration test
+D00090,T07,High,Customer,3.1,2022-01-09T10:00:00,2022-04-02T10:00:00,Missing regression test
+D00091,T07,Medium,Customer,3.2,2022-04-30T10:00:00,2022-05-08T10:00:00,Missing integration test
+D00092,T06,Low,Customer,3.3,2022-08-19T10:00:00,2022-10-10T10:00:00,Missing integration test
+D00093,T08,Low,Customer,3.4,2022-10-10T10:00:00,,Missing validation
+D00094,T08,Low,Customer,3.3,2022-08-06T10:00:00,2022-11-07T10:00:00,Missing regression test
+D00095,T06,Low,Customer,3.2,2022-05-03T10:00:00,2022-05-12T10:00:00,Missing regression test
+D00096,T08,Medium,Customer,3.3,2022-09-29T10:00:00,2022-11-04T10:00:00,Missing integration test
+D00097,T07,Low,Customer,3.2,2022-04-22T10:00:00,2022-05-03T10:00:00,Missing regression test
+D00098,T06,Medium,Customer,3.1,2022-01-18T10:00:00,2022-02-09T10:00:00,Missing integration test
+D00099,T08,Medium,Customer,3.3,2022-08-15T10:00:00,2022-10-11T10:00:00,Missing validation
+D00100,T08,Low,Customer,3.4,2022-10-02T10:00:00,,Missing integration test
+D00101,T08,Medium,Customer,3.1,2022-03-07T10:00:00,2022-05-08T10:00:00,Missing validation
+D00102,T07,High,Customer,3.1,2022-03-10T10:00:00,2022-04-20T10:00:00,Missing validation
+D00103,T07,Medium,Customer,3.3,2022-08-13T10:00:00,2022-09-19T10:00:00,Missing integration test
+D00104,T08,High,Customer,3.2,2022-06-30T10:00:00,2022-09-23T10:00:00,Missing integration test
+D00105,T06,Medium,Customer,3.2,2022-05-31T10:00:00,2022-08-13T10:00:00,Missing integration test
+D00106,T08,Low,Customer,3.1,2022-03-04T10:00:00,2022-04-06T10:00:00,Missing regression test
+D00107,T06,High,Customer,3.1,2022-02-08T10:00:00,2022-03-20T10:00:00,Missing integration test
+D00108,T06,Medium,Customer,3.3,2022-08-30T10:00:00,2022-11-09T10:00:00,Missing regression test
+D00109,T07,Medium,Customer,3.4,2022-10-15T10:00:00,2022-11-30T10:00:00,Missing regression test
+D00110,T07,Medium,Customer,3.3,2022-07-17T10:00:00,2022-09-29T10:00:00,Missing regression test
+D00111,T07,Low,Customer,3.2,2022-06-09T10:00:00,,Missing validation
+D00112,T07,Critical,Customer,3.2,2022-04-10T10:00:00,2022-05-16T10:00:00,Missing regression test
+D00113,T08,Low,Customer,3.4,2022-12-16T10:00:00,2023-01-29T10:00:00,Missing integration test
+D00114,T06,Medium,Customer,3.2,2022-06-11T10:00:00,2022-07-24T10:00:00,Missing regression test
+D00115,T08,Medium,Customer,3.2,2022-04-05T10:00:00,2022-05-02T10:00:00,Missing validation
+D00116,T07,High,Customer,3.2,2022-06-15T10:00:00,2022-07-26T10:00:00,Missing integration test
+D00117,T07,Low,Customer,3.3,2022-07-03T10:00:00,2022-08-01T10:00:00,Missing validation
+D00118,T07,Medium,Customer,3.4,2022-11-08T10:00:00,2023-01-30T10:00:00,Missing integration test
+D00119,T07,High,Customer,3.1,2022-03-24T10:00:00,,Missing validation
+D00120,T07,Low,Customer,3.1,2022-01-10T10:00:00,2022-04-14T10:00:00,Missing validation
+D00121,T08,Medium,Customer,3.1,2022-02-17T10:00:00,2022-03-24T10:00:00,Missing regression test
+D00122,T07,Low,Customer,3.1,2022-02-18T10:00:00,2022-04-24T10:00:00,Missing integration test
+D00123,T07,Medium,Customer,3.3,2022-09-16T10:00:00,2022-11-23T10:00:00,Missing integration test
+D00124,T07,Low,Customer,3.2,2022-04-28T10:00:00,2022-07-15T10:00:00,Missing validation
+D00125,T07,Low,Customer,3.4,2022-10-01T10:00:00,2022-12-02T10:00:00,Missing regression test
+D00126,T07,Medium,Customer,3.3,2022-08-26T10:00:00,2022-11-29T10:00:00,Missing validation
+D00127,T06,High,Customer,3.2,2022-04-24T10:00:00,2022-06-08T10:00:00,Missing integration test
+D00128,T06,Medium,Customer,3.4,2022-11-03T10:00:00,2023-01-11T10:00:00,Missing validation
+D00129,T07,Medium,Customer,3.4,2022-11-28T10:00:00,,Missing regression test
+D00130,T07,Low,Customer,3.1,2022-03-21T10:00:00,2022-06-19T10:00:00,Missing validation
+D00131,T08,Low,Customer,3.3,2022-09-11T10:00:00,2022-12-17T10:00:00,Missing integration test
+D00132,T07,High,Customer,3.3,2022-08-05T10:00:00,2022-09-28T10:00:00,Missing validation
+D00133,T07,Medium,Customer,3.2,2022-05-28T10:00:00,2022-09-02T10:00:00,Missing validation
+D00134,T08,Medium,Customer,3.4,2022-11-02T10:00:00,2022-12-24T10:00:00,Missing integration test
+D00135,T07,Low,Customer,3.4,2022-10-09T10:00:00,2022-11-23T10:00:00,Missing validation
+D00136,T08,High,Customer,3.4,2022-11-28T10:00:00,2023-02-22T10:00:00,Missing validation
+D00137,T08,Low,Customer,3.2,2022-06-15T10:00:00,2022-08-17T10:00:00,Missing regression test
+D00138,T08,High,Customer,3.4,2022-12-17T10:00:00,2023-01-20T10:00:00,Missing regression test
+D00139,T07,High,Customer,3.1,2022-03-06T10:00:00,2022-04-06T10:00:00,Missing integration test
+D00140,T07,High,Customer,3.4,2022-12-04T10:00:00,2023-02-28T10:00:00,Missing regression test
+D00141,T06,Medium,Customer,3.2,2022-05-10T10:00:00,2022-06-03T10:00:00,Missing validation
+D00142,T06,Medium,Customer,3.3,2022-09-16T10:00:00,2022-12-02T10:00:00,Missing validation
+D00143,T07,High,Customer,3.2,2022-04-10T10:00:00,2022-06-30T10:00:00,Missing integration test
+D00144,T07,Critical,Customer,3.2,2022-06-24T10:00:00,2022-07-20T10:00:00,Missing regression test
+D00145,T08,Medium,Customer,3.4,2022-12-22T10:00:00,2023-02-19T10:00:00,Missing validation
+D00146,T06,Medium,Customer,3.1,2022-01-26T10:00:00,2022-05-05T10:00:00,Missing regression test
+D00147,T07,Low,Customer,3.4,2022-11-14T10:00:00,2022-11-23T10:00:00,Missing validation
+D00148,T06,Low,Customer,3.4,2022-12-03T10:00:00,2023-01-01T10:00:00,Missing regression test
+D00149,T07,High,Customer,3.3,2022-07-30T10:00:00,2022-09-24T10:00:00,Missing regression test
+D00150,T07,Medium,Customer,3.2,2022-04-16T10:00:00,2022-04-28T10:00:00,Missing validation
+D00151,T08,Medium,Customer,3.4,2022-11-15T10:00:00,2023-01-16T10:00:00,Missing regression test
+D00152,T07,Low,Customer,3.3,2022-08-15T10:00:00,2022-10-13T10:00:00,Missing validation
+D00153,T07,Medium,Customer,3.1,2022-02-18T10:00:00,2022-05-23T10:00:00,Missing integration test
+D00154,T06,Medium,Customer,3.3,2022-09-10T10:00:00,2022-11-01T10:00:00,Missing regression test
+D00155,T07,Medium,Customer,3.3,2022-09-25T10:00:00,2022-10-06T10:00:00,Missing integration test
+D00156,T07,Medium,Customer,3.2,2022-05-24T10:00:00,2022-07-03T10:00:00,Missing regression test
+D00157,T06,Medium,Customer,3.3,2022-07-06T10:00:00,2022-09-12T10:00:00,Missing validation
+D00158,T08,Low,Customer,3.4,2022-10-25T10:00:00,,Missing validation
+D00159,T06,High,Customer,3.2,2022-05-18T10:00:00,2022-08-13T10:00:00,Missing regression test
+D00160,T07,Low,Customer,3.3,2022-09-22T10:00:00,2022-11-02T10:00:00,Missing regression test
+D00161,T06,Medium,Customer,3.4,2022-10-11T10:00:00,2022-12-30T10:00:00,Missing validation
+D00162,T07,Medium,Internal,3.1,2022-01-10T00:00:00,2022-01-30T00:00:00,Missing regression test
+D00163,T07,Medium,Internal,3.1,2022-01-28T00:00:00,2022-02-17T00:00:00,Missing regression test
+D00164,T07,Medium,Internal,3.1,2022-02-15T00:00:00,2022-03-07T00:00:00,Missing regression test
+D00165,T07,Medium,Internal,3.1,2022-03-05T00:00:00,2022-03-25T00:00:00,Missing regression test
+D00166,T07,Medium,Internal,3.1,2022-03-23T00:00:00,2022-04-12T00:00:00,Missing regression test
+D00167,T07,Medium,Internal,3.2,2022-04-10T00:00:00,2022-04-30T00:00:00,Missing regression test
+D00168,T07,Medium,Internal,3.2,2022-04-28T00:00:00,2022-05-18T00:00:00,Missing regression test
+D00169,T07,Medium,Internal,3.2,2022-05-16T00:00:00,2022-06-05T00:00:00,Missing regression test
+D00170,T07,Medium,Internal,3.2,2022-06-03T00:00:00,2022-06-23T00:00:00,Missing regression test
+D00171,T07,Medium,Internal,3.2,2022-06-21T00:00:00,2022-07-11T00:00:00,Missing regression test
+D00172,T07,Medium,Internal,3.3,2022-07-09T00:00:00,2022-07-29T00:00:00,Missing regression test
+D00173,T07,Medium,Internal,3.3,2022-07-27T00:00:00,2022-08-16T00:00:00,Missing regression test
+D00174,T07,Medium,Internal,3.3,2022-08-14T00:00:00,2022-09-03T00:00:00,Missing regression test
+D00175,T07,Medium,Internal,3.3,2022-09-01T00:00:00,2022-09-21T00:00:00,Missing regression test
+D00176,T07,Medium,Internal,3.3,2022-09-19T00:00:00,2022-10-09T00:00:00,Missing regression test
+D00177,T07,Medium,Internal,3.4,2022-10-07T00:00:00,2022-10-27T00:00:00,Missing regression test
+D00178,T07,Medium,Internal,3.4,2022-10-25T00:00:00,2022-11-14T00:00:00,Missing regression test
+D00179,T07,Medium,Internal,3.4,2022-11-12T00:00:00,2022-12-02T00:00:00,Missing regression test
+D00180,T07,High,Customer,4.4,2023-11-21T10:00:00,2024-01-03T10:00:00,Missing regression test
+D00181,T07,Medium,Customer,4.4,2023-12-06T10:00:00,2024-01-24T10:00:00,Missing validation
+D00182,T07,Medium,Customer,4.2,2023-06-07T10:00:00,,Missing validation
+D00183,T06,Low,Customer,4.3,2023-07-23T10:00:00,2023-09-02T10:00:00,Missing regression test
+D00184,T06,Low,Customer,4.4,2023-11-04T10:00:00,2023-12-31T10:00:00,Missing validation
+D00185,T07,Medium,Customer,4.3,2023-08-09T10:00:00,2023-11-12T10:00:00,Missing integration test
+D00186,T06,Medium,Customer,4.1,2023-03-29T10:00:00,2023-06-18T10:00:00,Missing regression test
+D00187,T06,Medium,Customer,4.2,2023-05-11T10:00:00,,Missing validation
+D00188,T06,Medium,Customer,4.2,2023-04-06T10:00:00,2023-06-25T10:00:00,Missing integration test
+D00189,T06,Medium,Customer,4.3,2023-09-12T10:00:00,2023-11-17T10:00:00,Missing validation
+D00190,T06,Medium,Customer,4.1,2023-02-20T10:00:00,2023-03-25T10:00:00,Missing regression test
+D00191,T08,Medium,Customer,4.2,2023-04-09T10:00:00,2023-07-16T10:00:00,Missing regression test
+D00192,T07,Medium,Customer,4.2,2023-05-29T10:00:00,2023-08-01T10:00:00,Missing validation
+D00193,T07,Low,Customer,4.2,2023-04-22T10:00:00,2023-05-15T10:00:00,Missing regression test
+D00194,T07,Medium,Customer,4.1,2023-03-14T10:00:00,2023-05-26T10:00:00,Missing validation
+D00195,T08,High,Customer,4.2,2023-05-17T10:00:00,2023-07-02T10:00:00,Missing integration test
+D00196,T06,Medium,Customer,4.2,2023-06-12T10:00:00,2023-07-18T10:00:00,Missing integration test
+D00197,T07,Medium,Customer,4.3,2023-08-13T10:00:00,2023-10-26T10:00:00,Missing regression test
+D00198,T08,Medium,Customer,4.2,2023-06-19T10:00:00,,Missing integration test
+D00199,T06,Medium,Customer,4.4,2023-12-10T10:00:00,2024-02-25T10:00:00,Missing validation
+D00200,T06,Low,Customer,4.4,2023-10-20T10:00:00,2023-11-11T10:00:00,Missing validation
+D00201,T06,High,Customer,4.2,2023-06-13T10:00:00,2023-07-27T10:00:00,Missing integration test
+D00202,T07,High,Customer,4.3,2023-09-17T10:00:00,2023-10-22T10:00:00,Missing validation
+D00203,T08,Medium,Customer,4.1,2023-03-06T10:00:00,2023-05-31T10:00:00,Missing validation
+D00204,T07,Medium,Customer,4.3,2023-09-24T10:00:00,2023-11-10T10:00:00,Missing validation
+D00205,T06,Medium,Customer,4.4,2023-11-02T10:00:00,2024-02-05T10:00:00,Missing validation
+D00206,T07,Low,Customer,4.3,2023-08-19T10:00:00,,Missing regression test
+D00207,T08,Medium,Customer,4.3,2023-09-08T10:00:00,2023-12-01T10:00:00,Missing regression test
+D00208,T07,Medium,Customer,4.4,2023-11-07T10:00:00,2024-01-24T10:00:00,Missing validation
+D00209,T06,Medium,Customer,4.1,2023-02-03T10:00:00,2023-04-27T10:00:00,Missing regression test
+D00210,T06,Medium,Customer,4.3,2023-08-10T10:00:00,2023-11-06T10:00:00,Missing integration test
+D00211,T07,Medium,Customer,4.2,2023-04-04T10:00:00,2023-06-29T10:00:00,Missing regression test
+D00212,T06,Low,Customer,4.1,2023-03-04T10:00:00,2023-03-24T10:00:00,Missing regression test
+D00213,T06,High,Customer,4.1,2023-03-10T10:00:00,2023-06-18T10:00:00,Missing integration test
+D00214,T08,Medium,Customer,4.3,2023-09-26T10:00:00,2023-10-06T10:00:00,Missing validation
+D00215,T08,Critical,Customer,4.3,2023-08-29T10:00:00,2023-10-13T10:00:00,Missing integration test
+D00216,T07,Medium,Customer,4.4,2023-12-06T10:00:00,2024-01-19T10:00:00,Missing regression test
+D00217,T06,High,Customer,4.4,2023-10-05T10:00:00,2023-11-16T10:00:00,Missing validation
+D00218,T06,Low,Customer,4.2,2023-06-21T10:00:00,,Missing validation
+D00219,T06,Low,Customer,4.2,2023-04-02T10:00:00,2023-05-22T10:00:00,Missing validation
+D00220,T06,High,Customer,4.4,2023-12-17T10:00:00,2024-03-05T10:00:00,Missing regression test
+D00221,T06,High,Customer,4.2,2023-05-06T10:00:00,2023-06-17T10:00:00,Missing regression test
+D00222,T07,Medium,Customer,4.3,2023-07-23T10:00:00,2023-08-18T10:00:00,Missing regression test
+D00223,T07,Low,Customer,4.1,2023-01-02T10:00:00,2023-02-13T10:00:00,Missing regression test
+D00224,T07,High,Customer,4.4,2023-11-20T10:00:00,2023-12-17T10:00:00,Missing integration test
+D00225,T06,Low,Customer,4.2,2023-05-02T10:00:00,2023-05-23T10:00:00,Missing integration test
+D00226,T06,High,Customer,4.4,2023-11-10T10:00:00,,Missing regression test
+D00227,T06,High,Customer,4.4,2023-12-05T10:00:00,2024-03-10T10:00:00,Missing validation
+D00228,T07,High,Customer,4.1,2023-01-21T10:00:00,2023-04-06T10:00:00,Missing integration test
+D00229,T07,Low,Customer,4.3,2023-07-20T10:00:00,2023-10-12T10:00:00,Missing validation
+D00230,T07,Low,Customer,4.2,2023-04-23T10:00:00,2023-07-14T10:00:00,Missing regression test
+D00231,T07,Medium,Customer,4.1,2023-01-20T10:00:00,2023-01-30T10:00:00,Missing regression test
+D00232,T06,Low,Customer,4.2,2023-05-11T10:00:00,2023-05-18T10:00:00,Missing integration test
+D00233,T06,Medium,Customer,4.4,2023-11-26T10:00:00,2023-12-30T10:00:00,Missing validation
+D00234,T08,High,Customer,4.2,2023-06-20T10:00:00,2023-09-05T10:00:00,Missing integration test
+D00235,T07,Medium,Customer,4.2,2023-06-13T10:00:00,2023-07-06T10:00:00,Missing validation
+D00236,T06,Medium,Customer,4.1,2023-03-11T10:00:00,,Missing integration test
+D00237,T07,High,Customer,4.3,2023-08-05T10:00:00,2023-09-27T10:00:00,Missing validation
+D00238,T07,Medium,Customer,4.1,2023-02-27T10:00:00,2023-05-23T10:00:00,Missing regression test
+D00239,T07,Medium,Customer,4.3,2023-09-18T10:00:00,2023-11-19T10:00:00,Missing regression test
+D00240,T06,Medium,Customer,4.2,2023-04-13T10:00:00,2023-05-11T10:00:00,Missing validation
+D00241,T07,Critical,Customer,4.3,2023-09-20T10:00:00,2023-12-22T10:00:00,Missing regression test
+D00242,T07,Low,Customer,4.2,2023-06-23T10:00:00,2023-07-19T10:00:00,Missing validation
+D00243,T07,Medium,Customer,4.4,2023-10-04T10:00:00,2023-12-17T10:00:00,Missing validation
+D00244,T06,Medium,Customer,4.4,2023-11-23T10:00:00,2023-12-03T10:00:00,Missing integration test
+D00245,T07,Low,Customer,4.1,2023-01-30T10:00:00,2023-05-09T10:00:00,Missing validation
+D00246,T06,Medium,Customer,4.4,2023-12-06T10:00:00,2024-02-12T10:00:00,Missing regression test
+D00247,T06,Medium,Customer,4.3,2023-07-26T10:00:00,2023-09-02T10:00:00,Missing integration test
+D00248,T08,High,Customer,4.1,2023-03-09T10:00:00,2023-05-25T10:00:00,Missing validation
+D00249,T06,Medium,Customer,4.3,2023-07-04T10:00:00,2023-08-23T10:00:00,Missing validation
+D00250,T08,Medium,Customer,4.3,2023-09-25T10:00:00,2023-12-12T10:00:00,Missing regression test
+D00251,T07,Medium,Customer,4.2,2023-06-07T10:00:00,2023-08-31T10:00:00,Missing regression test
+D00252,T06,High,Customer,4.2,2023-05-20T10:00:00,2023-07-29T10:00:00,Missing validation
+D00253,T06,Low,Customer,4.3,2023-07-10T10:00:00,2023-07-23T10:00:00,Missing integration test
+D00254,T06,High,Customer,4.3,2023-07-04T10:00:00,2023-07-18T10:00:00,Missing regression test
+D00255,T06,Medium,Customer,4.2,2023-06-20T10:00:00,2023-07-23T10:00:00,Missing integration test
+D00256,T07,Low,Customer,4.4,2023-10-28T10:00:00,2023-12-17T10:00:00,Missing regression test
+D00257,T07,High,Customer,4.4,2023-11-19T10:00:00,2024-01-24T10:00:00,Missing regression test
+D00258,T08,High,Customer,4.3,2023-08-15T10:00:00,2023-11-04T10:00:00,Missing integration test
+D00259,T07,Medium,Customer,4.1,2023-01-16T10:00:00,2023-04-08T10:00:00,Missing validation
+D00260,T06,High,Customer,4.1,2023-01-20T10:00:00,2023-04-12T10:00:00,Missing regression test
+D00261,T08,Medium,Customer,4.3,2023-07-28T10:00:00,2023-09-08T10:00:00,Missing regression test
+D00262,T07,Medium,Customer,4.2,2023-04-30T10:00:00,2023-05-17T10:00:00,Missing validation
+D00263,T06,Medium,Customer,4.1,2023-03-29T10:00:00,2023-06-09T10:00:00,Missing regression test
+D00264,T06,Medium,Customer,4.4,2023-12-08T10:00:00,2024-03-07T10:00:00,Missing integration test
+D00265,T07,High,Customer,4.2,2023-05-26T10:00:00,2023-08-17T10:00:00,Missing regression test
+D00266,T06,Low,Customer,4.4,2023-10-28T10:00:00,2023-12-02T10:00:00,Missing validation
+D00267,T06,Low,Customer,4.4,2023-10-18T10:00:00,2024-01-11T10:00:00,Missing validation
+D00268,T08,High,Customer,4.2,2023-04-09T10:00:00,2023-05-25T10:00:00,Missing integration test
+D00269,T06,Low,Customer,4.4,2023-12-18T10:00:00,2024-03-03T10:00:00,Missing integration test
+D00270,T07,Critical,Customer,4.4,2023-12-16T10:00:00,2024-03-11T10:00:00,Missing integration test
+D00271,T06,High,Customer,4.2,2023-04-29T10:00:00,2023-06-22T10:00:00,Missing validation
+D00272,T08,Medium,Customer,4.2,2023-05-02T10:00:00,2023-06-14T10:00:00,Missing regression test
+D00273,T06,Medium,Customer,4.1,2023-01-14T10:00:00,2023-02-16T10:00:00,Missing validation
+D00274,T07,Low,Customer,4.2,2023-05-01T10:00:00,2023-05-17T10:00:00,Missing regression test
+D00275,T07,Low,Customer,4.2,2023-04-04T10:00:00,2023-07-02T10:00:00,Missing validation
+D00276,T08,Low,Customer,4.2,2023-05-08T10:00:00,2023-06-15T10:00:00,Missing integration test
+D00277,T07,Low,Customer,4.1,2023-03-15T10:00:00,2023-04-19T10:00:00,Missing regression test
+D00278,T08,Medium,Customer,4.2,2023-04-08T10:00:00,2023-05-26T10:00:00,Missing integration test
+D00279,T06,Medium,Customer,4.2,2023-04-20T10:00:00,2023-06-03T10:00:00,Missing integration test
+D00280,T06,Medium,Customer,4.1,2023-01-07T10:00:00,2023-02-06T10:00:00,Missing validation
+D00281,T07,High,Customer,4.3,2023-08-20T10:00:00,,Missing validation
+D00282,T08,Medium,Customer,4.1,2023-01-03T10:00:00,2023-01-29T10:00:00,Missing regression test
+D00283,T07,High,Customer,4.1,2023-02-14T10:00:00,2023-04-10T10:00:00,Missing regression test
+D00284,T07,Medium,Customer,4.1,2023-03-11T10:00:00,2023-03-29T10:00:00,Missing regression test
+D00285,T07,Medium,Customer,4.1,2023-01-03T10:00:00,2023-04-07T10:00:00,Missing validation
+D00286,T07,Medium,Customer,4.3,2023-07-29T10:00:00,2023-10-04T10:00:00,Missing integration test
+D00287,T06,Medium,Customer,4.2,2023-05-26T10:00:00,2023-07-18T10:00:00,Missing regression test
+D00288,T06,Low,Customer,4.4,2023-12-13T10:00:00,2024-01-27T10:00:00,Missing validation
+D00289,T08,Critical,Customer,4.4,2023-10-03T10:00:00,2023-12-24T10:00:00,Missing integration test
+D00290,T06,High,Customer,4.1,2023-02-12T10:00:00,2023-03-26T10:00:00,Missing validation
+D00291,T06,High,Customer,4.3,2023-08-04T10:00:00,2023-10-19T10:00:00,Missing validation
+D00292,T06,Medium,Customer,4.3,2023-08-18T10:00:00,2023-10-03T10:00:00,Missing validation
+D00293,T06,High,Customer,4.3,2023-09-19T10:00:00,2023-12-26T10:00:00,Missing regression test
+D00294,T07,Medium,Internal,4.1,2023-01-10T00:00:00,2023-01-30T00:00:00,Missing regression test
+D00295,T07,Medium,Internal,4.1,2023-01-28T00:00:00,2023-02-17T00:00:00,Missing regression test
+D00296,T07,Medium,Internal,4.1,2023-02-15T00:00:00,2023-03-07T00:00:00,Missing regression test
+D00297,T07,Medium,Internal,4.1,2023-03-05T00:00:00,2023-03-25T00:00:00,Missing regression test
+D00298,T07,Medium,Internal,4.1,2023-03-23T00:00:00,2023-04-12T00:00:00,Missing regression test
+D00299,T07,Medium,Internal,4.2,2023-04-10T00:00:00,2023-04-30T00:00:00,Missing regression test
+D00300,T07,Medium,Internal,4.2,2023-04-28T00:00:00,2023-05-18T00:00:00,Missing regression test
+D00301,T07,Medium,Internal,4.2,2023-05-16T00:00:00,2023-06-05T00:00:00,Missing regression test
+D00302,T07,Medium,Internal,4.2,2023-06-03T00:00:00,2023-06-23T00:00:00,Missing regression test
+D00303,T07,Medium,Internal,4.2,2023-06-21T00:00:00,2023-07-11T00:00:00,Missing regression test
+D00304,T07,Medium,Internal,4.3,2023-07-09T00:00:00,2023-07-29T00:00:00,Missing regression test
+D00305,T07,Medium,Internal,4.3,2023-07-27T00:00:00,2023-08-16T00:00:00,Missing regression test
+D00306,T07,Medium,Internal,4.3,2023-08-14T00:00:00,2023-09-03T00:00:00,Missing regression test
+D00307,T07,Medium,Internal,4.3,2023-09-01T00:00:00,2023-09-21T00:00:00,Missing regression test
+D00308,T07,Medium,Internal,4.3,2023-09-19T00:00:00,2023-10-09T00:00:00,Missing regression test
+D00309,T07,Medium,Internal,4.4,2023-10-07T00:00:00,2023-10-27T00:00:00,Missing regression test
+D00310,T07,Medium,Internal,4.4,2023-10-25T00:00:00,2023-11-14T00:00:00,Missing regression test
+D00311,T07,Medium,Internal,4.4,2023-11-12T00:00:00,2023-12-02T00:00:00,Missing regression test
+D00312,T07,Medium,Customer,5.4,2024-11-15T10:00:00,2024-11-24T10:00:00,Missing validation
+D00313,T07,Low,Customer,5.1,2024-01-24T10:00:00,2024-03-14T10:00:00,Missing validation
+D00314,T08,Medium,Customer,5.1,2024-01-28T10:00:00,2024-03-18T10:00:00,Missing integration test
+D00315,T08,Medium,Customer,5.4,2024-10-30T10:00:00,,Missing regression test
+D00316,T06,Low,Customer,5.2,2024-06-27T10:00:00,2024-08-11T10:00:00,Missing integration test
+D00317,T07,Medium,Customer,5.4,2024-11-02T10:00:00,2024-11-15T10:00:00,Missing integration test
+D00318,T07,High,Customer,5.1,2024-01-01T10:00:00,2024-03-28T10:00:00,Missing integration test
+D00319,T06,Low,Customer,5.2,2024-06-12T10:00:00,2024-07-01T10:00:00,Missing validation
+D00320,T08,Medium,Customer,5.4,2024-10-13T10:00:00,2025-01-16T10:00:00,Missing integration test
+D00321,T08,Medium,Customer,5.3,2024-08-26T10:00:00,2024-10-21T10:00:00,Missing regression test
+D00322,T07,High,Customer,5.1,2024-02-28T10:00:00,2024-03-25T10:00:00,Missing validation
+D00323,T08,Medium,Customer,5.4,2024-12-01T10:00:00,2025-03-03T10:00:00,Missing regression test
+D00324,T07,Medium,Customer,5.3,2024-07-17T10:00:00,2024-07-31T10:00:00,Missing integration test
+D00325,T06,High,Customer,5.1,2024-01-13T10:00:00,2024-02-11T10:00:00,Missing validation
+D00326,T07,Medium,Customer,5.3,2024-08-08T10:00:00,,Missing validation
+D00327,T06,Low,Customer,5.3,2024-07-21T10:00:00,2024-09-20T10:00:00,Missing validation
+D00328,T06,Medium,Customer,5.3,2024-07-22T10:00:00,2024-10-20T10:00:00,Missing regression test
+D00329,T07,High,Customer,5.3,2024-09-25T10:00:00,,Missing regression test
+D00330,T07,Medium,Customer,5.4,2024-11-08T10:00:00,2024-11-23T10:00:00,Missing integration test
+D00331,T08,Low,Customer,5.1,2024-03-23T10:00:00,2024-05-16T10:00:00,Missing validation
+D00332,T07,Low,Customer,5.3,2024-07-16T10:00:00,2024-08-05T10:00:00,Missing integration test
+D00333,T07,Medium,Customer,5.4,2024-10-02T10:00:00,2025-01-07T10:00:00,Missing regression test
+D00334,T06,Low,Customer,5.4,2024-10-25T10:00:00,2024-12-21T10:00:00,Missing validation
+D00335,T07,Low,Customer,5.2,2024-05-18T10:00:00,2024-06-04T10:00:00,Missing regression test
+D00336,T08,High,Customer,5.2,2024-06-09T10:00:00,2024-08-23T10:00:00,Missing integration test
+D00337,T06,High,Customer,5.1,2024-03-26T10:00:00,2024-04-06T10:00:00,Missing regression test
+D00338,T07,Medium,Customer,5.4,2024-10-27T10:00:00,2025-01-06T10:00:00,Missing regression test
+D00339,T07,Medium,Customer,5.3,2024-07-21T10:00:00,2024-08-04T10:00:00,Missing regression test
+D00340,T07,Medium,Customer,5.4,2024-12-14T10:00:00,2025-02-22T10:00:00,Missing regression test
+D00341,T06,Medium,Customer,5.4,2024-11-19T10:00:00,2024-12-07T10:00:00,Missing validation
+D00342,T06,Medium,Customer,5.3,2024-08-14T10:00:00,2024-10-04T10:00:00,Missing regression test
+D00343,T07,Low,Customer,5.4,2024-11-05T10:00:00,2024-11-15T10:00:00,Missing validation
+D00344,T08,Medium,Customer,5.4,2024-12-18T10:00:00,2025-02-08T10:00:00,Missing validation
+D00345,T06,Medium,Customer,5.4,2024-11-20T10:00:00,2025-01-12T10:00:00,Missing validation
+D00346,T07,Low,Customer,5.3,2024-09-07T10:00:00,2024-10-27T10:00:00,Missing regression test
+D00347,T06,Low,Customer,5.2,2024-06-21T10:00:00,2024-07-30T10:00:00,Missing integration test
+D00348,T06,Low,Customer,5.4,2024-11-22T10:00:00,2024-12-11T10:00:00,Missing regression test
+D00349,T07,Medium,Customer,5.1,2024-02-08T10:00:00,2024-05-05T10:00:00,Missing regression test
+D00350,T08,Medium,Customer,5.1,2024-02-15T10:00:00,2024-05-20T10:00:00,Missing regression test
+D00351,T07,Medium,Customer,5.3,2024-09-09T10:00:00,2024-11-17T10:00:00,Missing regression test
+D00352,T08,Medium,Customer,5.2,2024-06-25T10:00:00,2024-09-27T10:00:00,Missing validation
+D00353,T07,Critical,Customer,5.4,2024-10-15T10:00:00,2025-01-08T10:00:00,Missing validation
+D00354,T08,Medium,Customer,5.3,2024-09-30T10:00:00,2024-10-14T10:00:00,Missing validation
+D00355,T07,Medium,Customer,5.1,2024-01-12T10:00:00,2024-04-10T10:00:00,Missing validation
+D00356,T08,Medium,Customer,5.1,2024-03-10T10:00:00,2024-04-14T10:00:00,Missing validation
+D00357,T07,Low,Customer,5.1,2024-03-22T10:00:00,2024-06-14T10:00:00,Missing validation
+D00358,T06,Medium,Customer,5.1,2024-01-31T10:00:00,2024-03-29T10:00:00,Missing validation
+D00359,T06,Medium,Customer,5.1,2024-03-16T10:00:00,2024-04-06T10:00:00,Missing validation
+D00360,T07,Low,Customer,5.2,2024-05-05T10:00:00,2024-06-15T10:00:00,Missing validation
+D00361,T06,Low,Customer,5.3,2024-09-13T10:00:00,2024-12-15T10:00:00,Missing validation
+D00362,T06,Medium,Customer,5.1,2024-03-29T10:00:00,2024-05-23T10:00:00,Missing validation
+D00363,T06,High,Customer,5.4,2024-12-20T10:00:00,2025-01-16T10:00:00,Missing regression test
+D00364,T08,Low,Customer,5.3,2024-07-07T10:00:00,2024-09-24T10:00:00,Missing validation
+D00365,T07,Medium,Customer,5.4,2024-11-27T10:00:00,2024-12-04T10:00:00,Missing integration test
+D00366,T08,Low,Customer,5.2,2024-06-10T10:00:00,2024-08-23T10:00:00,Missing validation
+D00367,T06,Low,Customer,5.2,2024-06-13T10:00:00,2024-08-06T10:00:00,Missing integration test
+D00368,T06,Medium,Customer,5.4,2024-11-24T10:00:00,2024-12-01T10:00:00,Missing integration test
+D00369,T06,Low,Customer,5.1,2024-02-19T10:00:00,2024-04-15T10:00:00,Missing integration test
+D00370,T06,Medium,Customer,5.4,2024-10-20T10:00:00,2024-12-29T10:00:00,Missing regression test
+D00371,T07,Low,Customer,5.1,2024-01-23T10:00:00,2024-04-10T10:00:00,Missing validation
+D00372,T06,Low,Customer,5.3,2024-08-07T10:00:00,2024-10-18T10:00:00,Missing validation
+D00373,T07,High,Customer,5.2,2024-06-08T10:00:00,2024-07-14T10:00:00,Missing validation
+D00374,T06,Medium,Customer,5.1,2024-02-10T10:00:00,2024-02-27T10:00:00,Missing integration test
+D00375,T08,High,Customer,5.3,2024-07-27T10:00:00,,Missing integration test
+D00376,T08,Medium,Customer,5.2,2024-04-14T10:00:00,2024-07-10T10:00:00,Missing regression test
+D00377,T07,Low,Customer,5.4,2024-11-15T10:00:00,2025-01-25T10:00:00,Missing integration test
+D00378,T07,Low,Customer,5.2,2024-04-05T10:00:00,2024-04-20T10:00:00,Missing integration test
+D00379,T08,Medium,Customer,5.1,2024-01-10T10:00:00,2024-02-01T10:00:00,Missing integration test
+D00380,T07,Medium,Customer,5.2,2024-05-29T10:00:00,2024-06-16T10:00:00,Missing integration test
+D00381,T08,Low,Customer,5.2,2024-05-12T10:00:00,2024-08-02T10:00:00,Missing regression test
+D00382,T07,High,Customer,5.4,2024-11-27T10:00:00,2025-01-18T10:00:00,Missing regression test
+D00383,T06,Medium,Customer,5.4,2024-10-14T10:00:00,2024-12-09T10:00:00,Missing integration test
+D00384,T06,Low,Customer,5.1,2024-01-07T10:00:00,2024-01-25T10:00:00,Missing regression test
+D00385,T07,Low,Customer,5.1,2024-02-28T10:00:00,2024-03-29T10:00:00,Missing integration test
+D00386,T07,Medium,Customer,5.1,2024-02-06T10:00:00,2024-05-02T10:00:00,Missing regression test
+D00387,T07,High,Customer,5.2,2024-04-27T10:00:00,2024-06-28T10:00:00,Missing validation
+D00388,T08,Medium,Customer,5.2,2024-05-12T10:00:00,2024-06-02T10:00:00,Missing validation
+D00389,T06,High,Customer,5.4,2024-11-16T10:00:00,2025-02-08T10:00:00,Missing integration test
+D00390,T07,Medium,Customer,5.3,2024-07-20T10:00:00,2024-10-04T10:00:00,Missing regression test
+D00391,T07,Medium,Customer,5.1,2024-03-30T10:00:00,2024-06-02T10:00:00,Missing regression test
+D00392,T07,Medium,Customer,5.3,2024-07-08T10:00:00,2024-09-26T10:00:00,Missing regression test
+D00393,T07,Medium,Customer,5.2,2024-06-02T10:00:00,2024-08-07T10:00:00,Missing regression test
+D00394,T08,Medium,Customer,5.3,2024-09-12T10:00:00,2024-12-05T10:00:00,Missing regression test
+D00395,T08,Low,Customer,5.4,2024-11-01T10:00:00,2024-12-10T10:00:00,Missing regression test
+D00396,T06,Low,Customer,5.2,2024-05-29T10:00:00,2024-06-15T10:00:00,Missing integration test
+D00397,T08,Medium,Customer,5.4,2024-12-14T10:00:00,2025-02-07T10:00:00,Missing integration test
+D00398,T07,Low,Customer,5.4,2024-11-05T10:00:00,2024-12-27T10:00:00,Missing validation
+D00399,T07,Medium,Customer,5.1,2024-03-06T10:00:00,2024-04-30T10:00:00,Missing regression test
+D00400,T06,Medium,Customer,5.4,2024-12-20T10:00:00,2025-03-07T10:00:00,Missing integration test
+D00401,T06,Medium,Customer,5.3,2024-08-01T10:00:00,2024-11-01T10:00:00,Missing integration test
+D00402,T07,Medium,Internal,5.1,2024-01-10T00:00:00,2024-01-30T00:00:00,Missing regression test
+D00403,T07,Medium,Internal,5.1,2024-01-28T00:00:00,2024-02-17T00:00:00,Missing regression test
+D00404,T07,Medium,Internal,5.1,2024-02-15T00:00:00,2024-03-06T00:00:00,Missing regression test
+D00405,T07,Medium,Internal,5.1,2024-03-04T00:00:00,2024-03-24T00:00:00,Missing regression test
+D00406,T07,Medium,Internal,5.1,2024-03-22T00:00:00,2024-04-11T00:00:00,Missing regression test
+D00407,T07,Medium,Internal,5.2,2024-04-09T00:00:00,2024-04-29T00:00:00,Missing regression test
+D00408,T07,Medium,Internal,5.2,2024-04-27T00:00:00,2024-05-17T00:00:00,Missing regression test
+D00409,T07,Medium,Internal,5.2,2024-05-15T00:00:00,2024-06-04T00:00:00,Missing regression test
+D00410,T07,Medium,Internal,5.2,2024-06-02T00:00:00,2024-06-22T00:00:00,Missing regression test
+D00411,T07,Medium,Internal,5.2,2024-06-20T00:00:00,2024-07-10T00:00:00,Missing regression test
+D00412,T07,Medium,Internal,5.3,2024-07-08T00:00:00,2024-07-28T00:00:00,Missing regression test
+D00413,T07,Medium,Internal,5.3,2024-07-26T00:00:00,2024-08-15T00:00:00,Missing regression test
+D00414,T07,Medium,Internal,5.3,2024-08-13T00:00:00,2024-09-02T00:00:00,Missing regression test
+D00415,T07,Medium,Internal,5.3,2024-08-31T00:00:00,2024-09-20T00:00:00,Missing regression test
+D00416,T07,Medium,Internal,5.3,2024-09-18T00:00:00,2024-10-08T00:00:00,Missing regression test
+D00417,T07,Medium,Internal,5.4,2024-10-06T00:00:00,2024-10-26T00:00:00,Missing regression test
+D00418,T07,Medium,Internal,5.4,2024-10-24T00:00:00,2024-11-13T00:00:00,Missing regression test
+D00419,T07,Medium,Internal,5.4,2024-11-11T00:00:00,2024-12-01T00:00:00,Missing regression test
+D00420,T06,High,Customer,6.1,2025-01-06T10:00:00,2025-02-11T10:00:00,Missing validation
+D00421,T07,Low,Customer,6.2,2025-04-23T10:00:00,2025-06-26T10:00:00,Missing validation
+D00422,T07,Low,Customer,6.4,2025-10-03T10:00:00,2025-10-25T10:00:00,Missing regression test
+D00423,T07,Low,Customer,6.4,2025-12-09T10:00:00,,Missing integration test
+D00424,T07,Low,Customer,6.1,2025-01-22T10:00:00,2025-04-08T10:00:00,Missing validation
+D00425,T07,Low,Customer,6.4,2025-11-27T10:00:00,,Missing validation
+D00426,T07,Medium,Customer,6.3,2025-07-25T10:00:00,2025-09-20T10:00:00,Missing validation
+D00427,T07,Low,Customer,6.3,2025-08-19T10:00:00,2025-10-24T10:00:00,Missing regression test
+D00428,T08,Medium,Customer,6.1,2025-01-07T10:00:00,2025-04-16T10:00:00,Missing integration test
+D00429,T07,Medium,Customer,6.2,2025-05-05T10:00:00,2025-06-23T10:00:00,Missing validation
+D00430,T08,Medium,Customer,6.3,2025-07-19T10:00:00,2025-09-17T10:00:00,Missing integration test
+D00431,T07,Low,Customer,6.2,2025-04-11T10:00:00,2025-06-11T10:00:00,Missing integration test
+D00432,T07,Medium,Customer,6.4,2025-12-01T10:00:00,,Missing integration test
+D00433,T08,Low,Customer,6.1,2025-03-06T10:00:00,2025-05-13T10:00:00,Missing integration test
+D00434,T08,Medium,Customer,6.3,2025-07-07T10:00:00,,Missing validation
+D00435,T08,High,Customer,6.1,2025-03-23T10:00:00,2025-06-05T10:00:00,Missing regression test
+D00436,T06,Low,Customer,6.4,2025-10-08T10:00:00,2025-11-01T10:00:00,Missing regression test
+D00437,T07,Low,Customer,6.2,2025-04-21T10:00:00,2025-07-18T10:00:00,Missing regression test
+D00438,T07,High,Customer,6.1,2025-03-07T10:00:00,2025-04-06T10:00:00,Missing regression test
+D00439,T08,Low,Customer,6.1,2025-03-25T10:00:00,2025-04-27T10:00:00,Missing regression test
+D00440,T08,Medium,Customer,6.4,2025-11-28T10:00:00,,Missing regression test
+D00441,T07,Low,Customer,6.2,2025-05-12T10:00:00,2025-08-12T10:00:00,Missing integration test
+D00442,T06,Low,Customer,6.1,2025-03-27T10:00:00,2025-05-28T10:00:00,Missing integration test
+D00443,T06,Low,Customer,6.4,2025-11-26T10:00:00,,Missing regression test
+D00444,T08,Medium,Customer,6.1,2025-01-24T10:00:00,2025-03-31T10:00:00,Missing regression test
+D00445,T06,Medium,Customer,6.3,2025-09-22T10:00:00,2025-12-07T10:00:00,Missing validation
+D00446,T06,Medium,Customer,6.1,2025-02-07T10:00:00,2025-04-12T10:00:00,Missing validation
+D00447,T07,Medium,Customer,6.3,2025-08-22T10:00:00,2025-10-04T10:00:00,Missing validation
+D00448,T06,Medium,Customer,6.3,2025-09-21T10:00:00,2025-12-20T10:00:00,Missing validation
+D00449,T08,Low,Customer,6.3,2025-08-16T10:00:00,2025-11-20T10:00:00,Missing integration test
+D00450,T08,Low,Customer,6.2,2025-06-05T10:00:00,2025-07-16T10:00:00,Missing regression test
+D00451,T06,Medium,Customer,6.3,2025-07-05T10:00:00,2025-08-17T10:00:00,Missing validation
+D00452,T07,High,Customer,6.2,2025-05-28T10:00:00,2025-07-06T10:00:00,Missing regression test
+D00453,T07,Medium,Customer,6.3,2025-07-24T10:00:00,2025-10-01T10:00:00,Missing validation
+D00454,T06,High,Customer,6.1,2025-03-24T10:00:00,2025-06-14T10:00:00,Missing regression test
+D00455,T07,Medium,Customer,6.3,2025-09-20T10:00:00,2025-11-21T10:00:00,Missing regression test
+D00456,T08,Low,Customer,6.1,2025-01-24T10:00:00,2025-04-04T10:00:00,Missing integration test
+D00457,T06,Low,Customer,6.2,2025-05-02T10:00:00,2025-07-15T10:00:00,Missing integration test
+D00458,T06,Low,Customer,6.3,2025-09-12T10:00:00,2025-11-25T10:00:00,Missing integration test
+D00459,T07,Low,Customer,6.1,2025-01-11T10:00:00,2025-03-18T10:00:00,Missing validation
+D00460,T07,High,Customer,6.4,2025-12-14T10:00:00,,Missing integration test
+D00461,T07,Critical,Customer,6.3,2025-07-22T10:00:00,2025-10-01T10:00:00,Missing validation
+D00462,T08,Low,Customer,6.3,2025-08-20T10:00:00,2025-09-27T10:00:00,Missing integration test
+D00463,T07,Medium,Customer,6.3,2025-09-24T10:00:00,2025-11-05T10:00:00,Missing validation
+D00464,T06,Medium,Customer,6.2,2025-04-12T10:00:00,2025-07-19T10:00:00,Missing integration test
+D00465,T06,Medium,Customer,6.3,2025-09-25T10:00:00,2025-11-20T10:00:00,Missing integration test
+D00466,T06,Medium,Customer,6.3,2025-07-16T10:00:00,2025-10-12T10:00:00,Missing regression test
+D00467,T06,High,Customer,6.1,2025-03-03T10:00:00,2025-06-08T10:00:00,Missing integration test
+D00468,T07,Medium,Customer,6.3,2025-08-01T10:00:00,2025-08-17T10:00:00,Missing integration test
+D00469,T07,Medium,Customer,6.4,2025-11-25T10:00:00,2025-12-28T10:00:00,Missing regression test
+D00470,T06,Medium,Customer,6.1,2025-01-01T10:00:00,2025-04-09T10:00:00,Missing integration test
+D00471,T08,Medium,Customer,6.3,2025-09-05T10:00:00,2025-10-14T10:00:00,Missing regression test
+D00472,T06,Low,Customer,6.3,2025-08-24T10:00:00,2025-10-17T10:00:00,Missing regression test
+D00473,T08,Medium,Customer,6.3,2025-07-28T10:00:00,2025-10-08T10:00:00,Missing regression test
+D00474,T08,High,Customer,6.1,2025-02-15T10:00:00,2025-05-22T10:00:00,Missing integration test
+D00475,T07,Medium,Customer,6.3,2025-07-25T10:00:00,2025-09-05T10:00:00,Missing integration test
+D00476,T08,Low,Customer,6.1,2025-02-05T10:00:00,2025-03-21T10:00:00,Missing integration test
+D00477,T07,Critical,Customer,6.2,2025-05-28T10:00:00,2025-08-11T10:00:00,Missing integration test
+D00478,T07,Medium,Customer,6.2,2025-04-21T10:00:00,2025-05-16T10:00:00,Missing validation
+D00479,T08,Low,Customer,6.3,2025-08-31T10:00:00,2025-09-25T10:00:00,Missing regression test
+D00480,T08,High,Customer,6.1,2025-02-21T10:00:00,2025-05-07T10:00:00,Missing integration test
+D00481,T06,High,Customer,6.4,2025-11-20T10:00:00,,Missing integration test
+D00482,T07,High,Customer,6.2,2025-06-07T10:00:00,2025-08-27T10:00:00,Missing integration test
+D00483,T08,Medium,Customer,6.1,2025-01-21T10:00:00,2025-01-31T10:00:00,Missing validation
+D00484,T08,Medium,Customer,6.3,2025-07-25T10:00:00,2025-10-14T10:00:00,Missing regression test
+D00485,T07,Medium,Customer,6.1,2025-03-06T10:00:00,2025-06-01T10:00:00,Missing validation
+D00486,T08,Low,Customer,6.2,2025-04-28T10:00:00,2025-06-25T10:00:00,Missing integration test
+D00487,T07,Low,Customer,6.4,2025-10-08T10:00:00,2025-11-24T10:00:00,Missing validation
+D00488,T06,Medium,Customer,6.1,2025-03-07T10:00:00,2025-03-31T10:00:00,Missing regression test
+D00489,T07,Medium,Customer,6.2,2025-04-05T10:00:00,2025-06-29T10:00:00,Missing validation
+D00490,T06,Medium,Customer,6.1,2025-01-26T10:00:00,2025-04-26T10:00:00,Missing validation
+D00491,T06,Low,Customer,6.3,2025-07-21T10:00:00,2025-08-10T10:00:00,Missing integration test
+D00492,T07,Medium,Customer,6.3,2025-07-26T10:00:00,,Missing regression test
+D00493,T07,Medium,Customer,6.4,2025-10-10T10:00:00,2025-11-07T10:00:00,Missing integration test
+D00494,T06,High,Customer,6.1,2025-01-12T10:00:00,2025-02-08T10:00:00,Missing validation
+D00495,T07,High,Customer,6.1,2025-03-12T10:00:00,2025-06-19T10:00:00,Missing validation
+D00496,T07,Low,Customer,6.4,2025-10-18T10:00:00,2025-12-17T10:00:00,Missing validation
+D00497,T06,Low,Customer,6.3,2025-07-23T10:00:00,2025-08-14T10:00:00,Missing validation
+D00498,T08,Low,Customer,6.1,2025-02-26T10:00:00,2025-04-19T10:00:00,Missing validation
+D00499,T08,Low,Customer,6.3,2025-09-25T10:00:00,2025-11-24T10:00:00,Missing integration test
+D00500,T07,Medium,Customer,6.3,2025-07-29T10:00:00,2025-08-22T10:00:00,Missing validation
+D00501,T07,Low,Customer,6.2,2025-06-20T10:00:00,2025-06-28T10:00:00,Missing regression test
+D00502,T07,Medium,Customer,6.1,2025-02-24T10:00:00,2025-03-06T10:00:00,Missing validation
+D00503,T07,Medium,Customer,6.3,2025-07-16T10:00:00,2025-08-06T10:00:00,Missing integration test
+D00504,T07,Medium,Customer,6.2,2025-06-16T10:00:00,2025-09-17T10:00:00,Missing regression test
+D00505,T06,Medium,Customer,6.3,2025-07-07T10:00:00,,Missing regression test
+D00506,T07,Low,Customer,6.4,2025-10-31T10:00:00,,Missing integration test
+D00507,T08,Medium,Customer,6.3,2025-08-28T10:00:00,2025-10-13T10:00:00,Missing integration test
+D00508,T07,Low,Customer,6.2,2025-06-06T10:00:00,2025-08-30T10:00:00,Missing validation
+D00509,T06,Medium,Customer,6.4,2025-11-19T10:00:00,,Missing integration test
+D00510,T07,Low,Customer,6.2,2025-04-27T10:00:00,2025-06-23T10:00:00,Missing regression test
+D00511,T08,Medium,Customer,6.3,2025-09-14T10:00:00,2025-11-23T10:00:00,Missing validation
+D00512,T06,Low,Customer,6.2,2025-06-02T10:00:00,2025-08-02T10:00:00,Missing integration test
+D00513,T07,Low,Customer,6.1,2025-03-18T10:00:00,2025-06-11T10:00:00,Missing regression test
+D00514,T08,Medium,Customer,6.3,2025-09-18T10:00:00,2025-10-07T10:00:00,Missing validation
+D00515,T07,Medium,Customer,6.2,2025-06-20T10:00:00,2025-09-20T10:00:00,Missing validation
+D00516,T07,Critical,Customer,6.4,2025-11-25T10:00:00,,Missing validation
+D00517,T07,Medium,Customer,6.4,2025-11-29T10:00:00,,Missing integration test
+D00518,T06,Medium,Customer,6.4,2025-12-11T10:00:00,,Missing integration test
+D00519,T06,Critical,Customer,6.3,2025-09-06T10:00:00,2025-11-13T10:00:00,Missing regression test
+D00520,T07,Medium,Customer,6.2,2025-05-29T10:00:00,2025-06-17T10:00:00,Missing integration test
+D00521,T06,Medium,Customer,6.1,2025-01-23T10:00:00,2025-02-27T10:00:00,Missing regression test
+D00522,T06,Low,Customer,6.3,2025-08-03T10:00:00,2025-10-17T10:00:00,Missing integration test
+D00523,T07,Medium,Internal,6.1,2025-01-10T00:00:00,2025-01-30T00:00:00,Missing regression test
+D00524,T07,Medium,Internal,6.1,2025-01-28T00:00:00,2025-02-17T00:00:00,Missing regression test
+D00525,T07,Medium,Internal,6.1,2025-02-15T00:00:00,2025-03-07T00:00:00,Missing regression test
+D00526,T07,Medium,Internal,6.1,2025-03-05T00:00:00,2025-03-25T00:00:00,Missing regression test
+D00527,T07,Medium,Internal,6.1,2025-03-23T00:00:00,2025-04-12T00:00:00,Missing regression test
+D00528,T07,Medium,Internal,6.2,2025-04-10T00:00:00,2025-04-30T00:00:00,Missing regression test
+D00529,T07,Medium,Internal,6.2,2025-04-28T00:00:00,2025-05-18T00:00:00,Missing regression test
+D00530,T07,Medium,Internal,6.2,2025-05-16T00:00:00,2025-06-05T00:00:00,Missing regression test
+D00531,T07,Medium,Internal,6.2,2025-06-03T00:00:00,2025-06-23T00:00:00,Missing regression test
+D00532,T07,Medium,Internal,6.2,2025-06-21T00:00:00,2025-07-11T00:00:00,Missing regression test
+D00533,T07,Medium,Internal,6.3,2025-07-09T00:00:00,2025-07-29T00:00:00,Missing regression test
+D00534,T07,Medium,Internal,6.3,2025-07-27T00:00:00,2025-08-16T00:00:00,Missing regression test
+D00535,T07,Medium,Internal,6.3,2025-08-14T00:00:00,2025-09-03T00:00:00,Missing regression test
+D00536,T07,Medium,Internal,6.3,2025-09-01T00:00:00,2025-09-21T00:00:00,Missing regression test
+D00537,T07,Medium,Internal,6.3,2025-09-19T00:00:00,2025-10-09T00:00:00,Missing regression test
+D00538,T07,Medium,Internal,6.4,2025-10-07T00:00:00,2025-10-27T00:00:00,Missing regression test
+D00539,T07,Medium,Internal,6.4,2025-10-25T00:00:00,2025-11-14T00:00:00,Missing regression test
+D00540,T07,Medium,Internal,6.4,2025-11-12T00:00:00,2025-12-02T00:00:00,Missing regression test

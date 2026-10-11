@@ -1,0 +1,57 @@
+project_id,customer_id,project_name,billing_model,budget_hours
+P-2021-C001,C001,Implementation,Fixed price,170
+P-2021-C002,C002,Migration,Time and materials,188
+P-2021-C003,C003,Training,Fixed price,206
+P-2021-C004,C004,Customization,Time and materials,224
+P-2021-C005,C005,Implementation,Fixed price,242
+P-2021-C006,C006,Migration,Time and materials,260
+P-2021-C007,C007,Training,Fixed price,278
+P-2021-C008,C008,Customization,Time and materials,296
+P-2021-C009,C009,Implementation,Fixed price,314
+P-2021-C010,C010,Migration,Time and materials,332
+P-2022-C001,C001,Implementation,Fixed price,170
+P-2022-C002,C002,Migration,Time and materials,188
+P-2022-C003,C003,Training,Fixed price,206
+P-2022-C004,C004,Customization,Time and materials,224
+P-2022-C005,C005,Implementation,Fixed price,242
+P-2022-C006,C006,Migration,Time and materials,260
+P-2022-C007,C007,Training,Fixed price,278
+P-2022-C008,C008,Customization,Time and materials,296
+P-2022-C009,C009,Implementation,Fixed price,314
+P-2022-C010,C010,Migration,Time and materials,332
+P-2023-C001,C001,Implementation,Fixed price,170
+P-2023-C002,C002,Migration,Time and materials,188
+P-2023-C003,C003,Training,Fixed price,206
+P-2023-C004,C004,Customization,Time and materials,224
+P-2023-C005,C005,Implementation,Fixed price,242
+P-2023-C006,C006,Migration,Time and materials,260
+P-2023-C007,C007,Training,Fixed price,278
+P-2023-C008,C008,Customization,Time and materials,296
+P-2023-C009,C009,Implementation,Fixed price,314
+P-2023-C010,C010,Migration,Time and materials,332
+P-2023-C011,C011,Training,Fixed price,350
+P-2023-C012,C012,Customization,Time and materials,368
+P-2024-C001,C001,Implementation,Fixed price,170
+P-2024-C002,C002,Migration,Time and materials,188
+P-2024-C003,C003,Training,Fixed price,206
+P-2024-C004,C004,Customization,Time and materials,224
+P-2024-C005,C005,Implementation,Fixed price,242
+P-2024-C006,C006,Migration,Time and materials,260
+P-2024-C007,C007,Training,Fixed price,278
+P-2024-C008,C008,Customization,Time and materials,296
+P-2024-C009,C009,Implementation,Fixed price,314
+P-2024-C010,C010,Migration,Time and materials,332
+P-2024-C011,C011,Training,Fixed price,350
+P-2024-C012,C012,Customization,Time and materials,368
+P-2025-C001,C001,Implementation,Fixed price,170
+P-2025-C002,C002,Migration,Time and materials,188
+P-2025-C003,C003,Training,Fixed price,206
+P-2025-C004,C004,Customization,Time and materials,224
+P-2025-C005,C005,Implementation,Fixed price,242
+P-2025-C006,C006,Migration,Time and materials,260
+P-2025-C007,C007,Training,Fixed price,278
+P-2025-C008,C008,Customization,Time and materials,296
+P-2025-C009,C009,Implementation,Fixed price,314
+P-2025-C010,C010,Migration,Time and materials,332
+P-2025-C011,C011,Training,Fixed price,350
+P-2025-C012,C012,Customization,Time and materials,368

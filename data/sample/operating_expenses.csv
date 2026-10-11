@@ -1,0 +1,241 @@
+expense_id,expense_date,category,amount_usd
+O-2021-1-Sal,2021-01-01T00:00:00,Sales and marketing,14000.0
+O-2021-1-Pro,2021-01-01T00:00:00,Product development,17000.0
+O-2021-1-Adm,2021-01-01T00:00:00,Administration,11000.0
+O-2021-1-Hos,2021-01-01T00:00:00,Hosting and tools,3500.0
+O-2021-2-Sal,2021-02-01T00:00:00,Sales and marketing,14000.0
+O-2021-2-Pro,2021-02-01T00:00:00,Product development,17000.0
+O-2021-2-Adm,2021-02-01T00:00:00,Administration,11000.0
+O-2021-2-Hos,2021-02-01T00:00:00,Hosting and tools,3500.0
+O-2021-3-Sal,2021-03-01T00:00:00,Sales and marketing,14000.0
+O-2021-3-Pro,2021-03-01T00:00:00,Product development,17000.0
+O-2021-3-Adm,2021-03-01T00:00:00,Administration,11000.0
+O-2021-3-Hos,2021-03-01T00:00:00,Hosting and tools,3500.0
+O-2021-4-Sal,2021-04-01T00:00:00,Sales and marketing,14000.0
+O-2021-4-Pro,2021-04-01T00:00:00,Product development,17000.0
+O-2021-4-Adm,2021-04-01T00:00:00,Administration,11000.0
+O-2021-4-Hos,2021-04-01T00:00:00,Hosting and tools,3500.0
+O-2021-5-Sal,2021-05-01T00:00:00,Sales and marketing,14000.0
+O-2021-5-Pro,2021-05-01T00:00:00,Product development,17000.0
+O-2021-5-Adm,2021-05-01T00:00:00,Administration,11000.0
+O-2021-5-Hos,2021-05-01T00:00:00,Hosting and tools,3500.0
+O-2021-6-Sal,2021-06-01T00:00:00,Sales and marketing,14000.0
+O-2021-6-Pro,2021-06-01T00:00:00,Product development,17000.0
+O-2021-6-Adm,2021-06-01T00:00:00,Administration,11000.0
+O-2021-6-Hos,2021-06-01T00:00:00,Hosting and tools,3500.0
+O-2021-7-Sal,2021-07-01T00:00:00,Sales and marketing,14000.0
+O-2021-7-Pro,2021-07-01T00:00:00,Product development,17000.0
+O-2021-7-Adm,2021-07-01T00:00:00,Administration,11000.0
+O-2021-7-Hos,2021-07-01T00:00:00,Hosting and tools,3500.0
+O-2021-8-Sal,2021-08-01T00:00:00,Sales and marketing,14000.0
+O-2021-8-Pro,2021-08-01T00:00:00,Product development,17000.0
+O-2021-8-Adm,2021-08-01T00:00:00,Administration,11000.0
+O-2021-8-Hos,2021-08-01T00:00:00,Hosting and tools,3500.0
+O-2021-9-Sal,2021-09-01T00:00:00,Sales and marketing,14000.0
+O-2021-9-Pro,2021-09-01T00:00:00,Product development,17000.0
+O-2021-9-Adm,2021-09-01T00:00:00,Administration,11000.0
+O-2021-9-Hos,2021-09-01T00:00:00,Hosting and tools,3500.0
+O-2021-10-Sal,2021-10-01T00:00:00,Sales and marketing,14000.0
+O-2021-10-Pro,2021-10-01T00:00:00,Product development,17000.0
+O-2021-10-Adm,2021-10-01T00:00:00,Administration,11000.0
+O-2021-10-Hos,2021-10-01T00:00:00,Hosting and tools,3500.0
+O-2021-11-Sal,2021-11-01T00:00:00,Sales and marketing,14000.0
+O-2021-11-Pro,2021-11-01T00:00:00,Product development,17000.0
+O-2021-11-Adm,2021-11-01T00:00:00,Administration,11000.0
+O-2021-11-Hos,2021-11-01T00:00:00,Hosting and tools,3500.0
+O-2021-12-Sal,2021-12-01T00:00:00,Sales and marketing,14000.0
+O-2021-12-Pro,2021-12-01T00:00:00,Product development,17000.0
+O-2021-12-Adm,2021-12-01T00:00:00,Administration,11000.0
+O-2021-12-Hos,2021-12-01T00:00:00,Hosting and tools,3500.0
+O-2022-1-Sal,2022-01-01T00:00:00,Sales and marketing,14700.0
+O-2022-1-Pro,2022-01-01T00:00:00,Product development,17850.0
+O-2022-1-Adm,2022-01-01T00:00:00,Administration,11550.0
+O-2022-1-Hos,2022-01-01T00:00:00,Hosting and tools,3675.0
+O-2022-2-Sal,2022-02-01T00:00:00,Sales and marketing,14700.0
+O-2022-2-Pro,2022-02-01T00:00:00,Product development,17850.0
+O-2022-2-Adm,2022-02-01T00:00:00,Administration,11550.0
+O-2022-2-Hos,2022-02-01T00:00:00,Hosting and tools,3675.0
+O-2022-3-Sal,2022-03-01T00:00:00,Sales and marketing,14700.0
+O-2022-3-Pro,2022-03-01T00:00:00,Product development,17850.0
+O-2022-3-Adm,2022-03-01T00:00:00,Administration,11550.0
+O-2022-3-Hos,2022-03-01T00:00:00,Hosting and tools,3675.0
+O-2022-4-Sal,2022-04-01T00:00:00,Sales and marketing,14700.0
+O-2022-4-Pro,2022-04-01T00:00:00,Product development,17850.0
+O-2022-4-Adm,2022-04-01T00:00:00,Administration,11550.0
+O-2022-4-Hos,2022-04-01T00:00:00,Hosting and tools,3675.0
+O-2022-5-Sal,2022-05-01T00:00:00,Sales and marketing,14700.0
+O-2022-5-Pro,2022-05-01T00:00:00,Product development,17850.0
+O-2022-5-Adm,2022-05-01T00:00:00,Administration,11550.0
+O-2022-5-Hos,2022-05-01T00:00:00,Hosting and tools,3675.0
+O-2022-6-Sal,2022-06-01T00:00:00,Sales and marketing,14700.0
+O-2022-6-Pro,2022-06-01T00:00:00,Product development,17850.0
+O-2022-6-Adm,2022-06-01T00:00:00,Administration,11550.0
+O-2022-6-Hos,2022-06-01T00:00:00,Hosting and tools,3675.0
+O-2022-7-Sal,2022-07-01T00:00:00,Sales and marketing,14700.0
+O-2022-7-Pro,2022-07-01T00:00:00,Product development,17850.0
+O-2022-7-Adm,2022-07-01T00:00:00,Administration,11550.0
+O-2022-7-Hos,2022-07-01T00:00:00,Hosting and tools,3675.0
+O-2022-8-Sal,2022-08-01T00:00:00,Sales and marketing,14700.0
+O-2022-8-Pro,2022-08-01T00:00:00,Product development,17850.0
+O-2022-8-Adm,2022-08-01T00:00:00,Administration,11550.0
+O-2022-8-Hos,2022-08-01T00:00:00,Hosting and tools,3675.0
+O-2022-9-Sal,2022-09-01T00:00:00,Sales and marketing,14700.0
+O-2022-9-Pro,2022-09-01T00:00:00,Product development,17850.0
+O-2022-9-Adm,2022-09-01T00:00:00,Administration,11550.0
+O-2022-9-Hos,2022-09-01T00:00:00,Hosting and tools,3675.0
+O-2022-10-Sal,2022-10-01T00:00:00,Sales and marketing,14700.0
+O-2022-10-Pro,2022-10-01T00:00:00,Product development,17850.0
+O-2022-10-Adm,2022-10-01T00:00:00,Administration,11550.0
+O-2022-10-Hos,2022-10-01T00:00:00,Hosting and tools,3675.0
+O-2022-11-Sal,2022-11-01T00:00:00,Sales and marketing,14700.0
+O-2022-11-Pro,2022-11-01T00:00:00,Product development,17850.0
+O-2022-11-Adm,2022-11-01T00:00:00,Administration,11550.0
+O-2022-11-Hos,2022-11-01T00:00:00,Hosting and tools,3675.0
+O-2022-12-Sal,2022-12-01T00:00:00,Sales and marketing,14700.0
+O-2022-12-Pro,2022-12-01T00:00:00,Product development,17850.0
+O-2022-12-Adm,2022-12-01T00:00:00,Administration,11550.0
+O-2022-12-Hos,2022-12-01T00:00:00,Hosting and tools,3675.0
+O-2023-1-Sal,2023-01-01T00:00:00,Sales and marketing,15435.0
+O-2023-1-Pro,2023-01-01T00:00:00,Product development,18742.5
+O-2023-1-Adm,2023-01-01T00:00:00,Administration,12127.5
+O-2023-1-Hos,2023-01-01T00:00:00,Hosting and tools,3858.75
+O-2023-2-Sal,2023-02-01T00:00:00,Sales and marketing,15435.0
+O-2023-2-Pro,2023-02-01T00:00:00,Product development,18742.5
+O-2023-2-Adm,2023-02-01T00:00:00,Administration,12127.5
+O-2023-2-Hos,2023-02-01T00:00:00,Hosting and tools,3858.75
+O-2023-3-Sal,2023-03-01T00:00:00,Sales and marketing,15435.0
+O-2023-3-Pro,2023-03-01T00:00:00,Product development,18742.5
+O-2023-3-Adm,2023-03-01T00:00:00,Administration,12127.5
+O-2023-3-Hos,2023-03-01T00:00:00,Hosting and tools,3858.75
+O-2023-4-Sal,2023-04-01T00:00:00,Sales and marketing,15435.0
+O-2023-4-Pro,2023-04-01T00:00:00,Product development,18742.5
+O-2023-4-Adm,2023-04-01T00:00:00,Administration,12127.5
+O-2023-4-Hos,2023-04-01T00:00:00,Hosting and tools,3858.75
+O-2023-5-Sal,2023-05-01T00:00:00,Sales and marketing,15435.0
+O-2023-5-Pro,2023-05-01T00:00:00,Product development,18742.5
+O-2023-5-Adm,2023-05-01T00:00:00,Administration,12127.5
+O-2023-5-Hos,2023-05-01T00:00:00,Hosting and tools,3858.75
+O-2023-6-Sal,2023-06-01T00:00:00,Sales and marketing,15435.0
+O-2023-6-Pro,2023-06-01T00:00:00,Product development,18742.5
+O-2023-6-Adm,2023-06-01T00:00:00,Administration,12127.5
+O-2023-6-Hos,2023-06-01T00:00:00,Hosting and tools,3858.75
+O-2023-7-Sal,2023-07-01T00:00:00,Sales and marketing,15435.0
+O-2023-7-Pro,2023-07-01T00:00:00,Product development,18742.5
+O-2023-7-Adm,2023-07-01T00:00:00,Administration,12127.5
+O-2023-7-Hos,2023-07-01T00:00:00,Hosting and tools,3858.75
+O-2023-8-Sal,2023-08-01T00:00:00,Sales and marketing,15435.0
+O-2023-8-Pro,2023-08-01T00:00:00,Product development,18742.5
+O-2023-8-Adm,2023-08-01T00:00:00,Administration,12127.5
+O-2023-8-Hos,2023-08-01T00:00:00,Hosting and tools,3858.75
+O-2023-9-Sal,2023-09-01T00:00:00,Sales and marketing,15435.0
+O-2023-9-Pro,2023-09-01T00:00:00,Product development,18742.5
+O-2023-9-Adm,2023-09-01T00:00:00,Administration,12127.5
+O-2023-9-Hos,2023-09-01T00:00:00,Hosting and tools,3858.75
+O-2023-10-Sal,2023-10-01T00:00:00,Sales and marketing,15435.0
+O-2023-10-Pro,2023-10-01T00:00:00,Product development,18742.5
+O-2023-10-Adm,2023-10-01T00:00:00,Administration,12127.5
+O-2023-10-Hos,2023-10-01T00:00:00,Hosting and tools,3858.75
+O-2023-11-Sal,2023-11-01T00:00:00,Sales and marketing,15435.0
+O-2023-11-Pro,2023-11-01T00:00:00,Product development,18742.5
+O-2023-11-Adm,2023-11-01T00:00:00,Administration,12127.5
+O-2023-11-Hos,2023-11-01T00:00:00,Hosting and tools,3858.75
+O-2023-12-Sal,2023-12-01T00:00:00,Sales and marketing,15435.0
+O-2023-12-Pro,2023-12-01T00:00:00,Product development,18742.5
+O-2023-12-Adm,2023-12-01T00:00:00,Administration,12127.5
+O-2023-12-Hos,2023-12-01T00:00:00,Hosting and tools,3858.75
+O-2024-1-Sal,2024-01-01T00:00:00,Sales and marketing,16206.75
+O-2024-1-Pro,2024-01-01T00:00:00,Product development,19679.63
+O-2024-1-Adm,2024-01-01T00:00:00,Administration,12733.88
+O-2024-1-Hos,2024-01-01T00:00:00,Hosting and tools,4051.69
+O-2024-2-Sal,2024-02-01T00:00:00,Sales and marketing,16206.75
+O-2024-2-Pro,2024-02-01T00:00:00,Product development,19679.63
+O-2024-2-Adm,2024-02-01T00:00:00,Administration,12733.88
+O-2024-2-Hos,2024-02-01T00:00:00,Hosting and tools,4051.69
+O-2024-3-Sal,2024-03-01T00:00:00,Sales and marketing,16206.75
+O-2024-3-Pro,2024-03-01T00:00:00,Product development,19679.63
+O-2024-3-Adm,2024-03-01T00:00:00,Administration,12733.88
+O-2024-3-Hos,2024-03-01T00:00:00,Hosting and tools,4051.69
+O-2024-4-Sal,2024-04-01T00:00:00,Sales and marketing,16206.75
+O-2024-4-Pro,2024-04-01T00:00:00,Product development,19679.63
+O-2024-4-Adm,2024-04-01T00:00:00,Administration,12733.88
+O-2024-4-Hos,2024-04-01T00:00:00,Hosting and tools,4051.69
+O-2024-5-Sal,2024-05-01T00:00:00,Sales and marketing,16206.75
+O-2024-5-Pro,2024-05-01T00:00:00,Product development,19679.63
+O-2024-5-Adm,2024-05-01T00:00:00,Administration,12733.88
+O-2024-5-Hos,2024-05-01T00:00:00,Hosting and tools,4051.69
+O-2024-6-Sal,2024-06-01T00:00:00,Sales and marketing,16206.75
+O-2024-6-Pro,2024-06-01T00:00:00,Product development,19679.63
+O-2024-6-Adm,2024-06-01T00:00:00,Administration,12733.88
+O-2024-6-Hos,2024-06-01T00:00:00,Hosting and tools,4051.69
+O-2024-7-Sal,2024-07-01T00:00:00,Sales and marketing,16206.75
+O-2024-7-Pro,2024-07-01T00:00:00,Product development,19679.63
+O-2024-7-Adm,2024-07-01T00:00:00,Administration,12733.88
+O-2024-7-Hos,2024-07-01T00:00:00,Hosting and tools,4051.69
+O-2024-8-Sal,2024-08-01T00:00:00,Sales and marketing,16206.75
+O-2024-8-Pro,2024-08-01T00:00:00,Product development,19679.63
+O-2024-8-Adm,2024-08-01T00:00:00,Administration,12733.88
+O-2024-8-Hos,2024-08-01T00:00:00,Hosting and tools,4051.69
+O-2024-9-Sal,2024-09-01T00:00:00,Sales and marketing,16206.75
+O-2024-9-Pro,2024-09-01T00:00:00,Product development,19679.63
+O-2024-9-Adm,2024-09-01T00:00:00,Administration,12733.88
+O-2024-9-Hos,2024-09-01T00:00:00,Hosting and tools,4051.69
+O-2024-10-Sal,2024-10-01T00:00:00,Sales and marketing,16206.75
+O-2024-10-Pro,2024-10-01T00:00:00,Product development,19679.63
+O-2024-10-Adm,2024-10-01T00:00:00,Administration,12733.88
+O-2024-10-Hos,2024-10-01T00:00:00,Hosting and tools,4051.69
+O-2024-11-Sal,2024-11-01T00:00:00,Sales and marketing,16206.75
+O-2024-11-Pro,2024-11-01T00:00:00,Product development,19679.63
+O-2024-11-Adm,2024-11-01T00:00:00,Administration,12733.88
+O-2024-11-Hos,2024-11-01T00:00:00,Hosting and tools,4051.69
+O-2024-12-Sal,2024-12-01T00:00:00,Sales and marketing,16206.75
+O-2024-12-Pro,2024-12-01T00:00:00,Product development,19679.63
+O-2024-12-Adm,2024-12-01T00:00:00,Administration,12733.88
+O-2024-12-Hos,2024-12-01T00:00:00,Hosting and tools,4051.69
+O-2025-1-Sal,2025-01-01T00:00:00,Sales and marketing,17017.09
+O-2025-1-Pro,2025-01-01T00:00:00,Product development,20663.61
+O-2025-1-Adm,2025-01-01T00:00:00,Administration,13370.57
+O-2025-1-Hos,2025-01-01T00:00:00,Hosting and tools,4254.27
+O-2025-2-Sal,2025-02-01T00:00:00,Sales and marketing,17017.09
+O-2025-2-Pro,2025-02-01T00:00:00,Product development,20663.61
+O-2025-2-Adm,2025-02-01T00:00:00,Administration,13370.57
+O-2025-2-Hos,2025-02-01T00:00:00,Hosting and tools,4254.27
+O-2025-3-Sal,2025-03-01T00:00:00,Sales and marketing,17017.09
+O-2025-3-Pro,2025-03-01T00:00:00,Product development,20663.61
+O-2025-3-Adm,2025-03-01T00:00:00,Administration,13370.57
+O-2025-3-Hos,2025-03-01T00:00:00,Hosting and tools,4254.27
+O-2025-4-Sal,2025-04-01T00:00:00,Sales and marketing,17017.09
+O-2025-4-Pro,2025-04-01T00:00:00,Product development,20663.61
+O-2025-4-Adm,2025-04-01T00:00:00,Administration,13370.57
+O-2025-4-Hos,2025-04-01T00:00:00,Hosting and tools,4254.27
+O-2025-5-Sal,2025-05-01T00:00:00,Sales and marketing,17017.09
+O-2025-5-Pro,2025-05-01T00:00:00,Product development,20663.61
+O-2025-5-Adm,2025-05-01T00:00:00,Administration,13370.57
+O-2025-5-Hos,2025-05-01T00:00:00,Hosting and tools,4254.27
+O-2025-6-Sal,2025-06-01T00:00:00,Sales and marketing,17017.09
+O-2025-6-Pro,2025-06-01T00:00:00,Product development,20663.61
+O-2025-6-Adm,2025-06-01T00:00:00,Administration,13370.57
+O-2025-6-Hos,2025-06-01T00:00:00,Hosting and tools,4254.27
+O-2025-7-Sal,2025-07-01T00:00:00,Sales and marketing,17017.09
+O-2025-7-Pro,2025-07-01T00:00:00,Product development,20663.61
+O-2025-7-Adm,2025-07-01T00:00:00,Administration,13370.57
+O-2025-7-Hos,2025-07-01T00:00:00,Hosting and tools,4254.27
+O-2025-8-Sal,2025-08-01T00:00:00,Sales and marketing,17017.09
+O-2025-8-Pro,2025-08-01T00:00:00,Product development,20663.61
+O-2025-8-Adm,2025-08-01T00:00:00,Administration,13370.57
+O-2025-8-Hos,2025-08-01T00:00:00,Hosting and tools,4254.27
+O-2025-9-Sal,2025-09-01T00:00:00,Sales and marketing,17017.09
+O-2025-9-Pro,2025-09-01T00:00:00,Product development,20663.61
+O-2025-9-Adm,2025-09-01T00:00:00,Administration,13370.57
+O-2025-9-Hos,2025-09-01T00:00:00,Hosting and tools,4254.27
+O-2025-10-Sal,2025-10-01T00:00:00,Sales and marketing,17017.09
+O-2025-10-Pro,2025-10-01T00:00:00,Product development,20663.61
+O-2025-10-Adm,2025-10-01T00:00:00,Administration,13370.57
+O-2025-10-Hos,2025-10-01T00:00:00,Hosting and tools,4254.27
+O-2025-11-Sal,2025-11-01T00:00:00,Sales and marketing,17017.09
+O-2025-11-Pro,2025-11-01T00:00:00,Product development,20663.61
+O-2025-11-Adm,2025-11-01T00:00:00,Administration,13370.57
+O-2025-11-Hos,2025-11-01T00:00:00,Hosting and tools,4254.27
+O-2025-12-Sal,2025-12-01T00:00:00,Sales and marketing,17017.09
+O-2025-12-Pro,2025-12-01T00:00:00,Product development,20663.61
+O-2025-12-Adm,2025-12-01T00:00:00,Administration,13370.57
+O-2025-12-Hos,2025-12-01T00:00:00,Hosting and tools,4254.27

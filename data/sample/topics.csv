@@ -1,0 +1,11 @@
+topic_id,product_area,functionality,approved_answer,answer_only,knowledge_article
+T01,Reporting,Export reports,True,True,KB-001
+T02,Workflow,Explain workflow status,True,True,KB-002
+T03,Access,Understand permission roles,True,True,KB-003
+T04,Integrations,API authentication setup,False,True,Not available
+T05,Inventory,Correct inventory balances,False,False,Not available
+T06,Reporting,Large report timeout,False,False,Not available
+T07,Workflow,Transition validation,False,False,Not available
+T08,Integrations,Duplicate import records,False,False,Not available
+T09,Inventory,Stock history questions,True,True,KB-009
+T10,Access,Change access rights,True,False,KB-010

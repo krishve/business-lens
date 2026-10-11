@@ -1,0 +1,13 @@
+customer_id,customer_name,industry,joined_date
+C001,Aster Labs,Life sciences,2021-01-01T00:00:00
+C002,Birch Manufacturing,Manufacturing,2021-01-01T00:00:00
+C003,Cobalt Foods,Food,2021-01-01T00:00:00
+C004,Delta Devices,Medical devices,2021-01-01T00:00:00
+C005,Elm Logistics,Life sciences,2021-01-01T00:00:00
+C006,Fable Pharma,Manufacturing,2021-01-01T00:00:00
+C007,Grove Packaging,Food,2021-01-01T00:00:00
+C008,Harbor Chemicals,Medical devices,2021-01-01T00:00:00
+C009,Indigo Health,Life sciences,2021-01-01T00:00:00
+C010,Juniper Energy,Manufacturing,2021-01-01T00:00:00
+C011,Kite Robotics,Food,2023-01-01T00:00:00
+C012,Linden Foods,Medical devices,2023-01-01T00:00:00
