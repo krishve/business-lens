@@ -4,6 +4,12 @@ Business Lens is a small Python and Streamlit dashboard for a software business.
 
 It runs locally and accepts CSV files. No database, API key or external AI service is required.
 
+## Project objective
+
+The goal is to give a software business owner one place to compare income with the effort required to serve customers. A large customer is not always the most profitable: support cases, custom changes and consulting work can consume much of its revenue.
+
+This project demonstrates how to load related CSV files, validate records, calculate financial and service metrics, and present the results in an interactive dashboard. It includes five years of fictional data so anyone can try it without connecting a business system.
+
 ## What it helps answer
 
 - How did revenue and operating profit change from year to year?
@@ -17,27 +23,34 @@ The dashboard explains its calculations. Its suggestions are fixed rules applied
 
 ## Start the dashboard
 
-The project is in `D:\RD\GEN_AI\Week1`.
+Install **Python 3.13** and **Git**, then clone the repository:
 
-On this computer, the environment and packages are already installed. Double-click `run.bat`, then open <http://localhost:8501>.
+```bash
+git clone https://github.com/krishve/business-lens.git
+cd business-lens
+```
 
-On another Windows computer with Python 3.13 installed:
+### Windows
 
-1. Download or clone the project.
-2. Double-click `setup.bat` and wait for it to finish.
-3. Double-click `run.bat`.
-4. Open <http://localhost:8501>.
+Double-click `setup.bat`, wait for setup to finish, then double-click `run.bat`.
 
-Or use a terminal:
+Or run these commands from the project folder:
 
 ```powershell
-cd D:\RD\GEN_AI\Week1
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements-dev.txt
 .venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-On macOS or Linux, use `.venv/bin/python` instead of `.venv\Scripts\python.exe`.
+### macOS or Linux
+
+```bash
+python3.13 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python -m streamlit run app.py
+```
+
+Open <http://localhost:8501>. The dashboard starts with the bundled sample data. Choose a year and a view in the sidebar; no upload is needed to try it.
 
 The server listens on the local computer only. Stop it with Ctrl+C in its terminal. If port 8501 is busy, add `--server.port 8502` to the Streamlit command and open that port instead.
 
@@ -46,7 +59,7 @@ The server listens on the local computer only. Stop it with Ctrl+C in its termin
 The `data/sample` folder contains 15 CSV files covering the five complete years **2021–2025**. All names and records are fictional. The data contains:
 
 - 12 customers, including two that join in 2023.
-- 56 customer-year snapshots and consulting projects.
+- 56 customer-year snapshots and 56 consulting projects.
 - 2,000 support cases and 540 product defects.
 - 4,336 time entries, 20 releases and 10 support topics.
 - Separate license, support and services revenue records.
@@ -193,7 +206,7 @@ requirements.txt          Application packages
 requirements-dev.txt      Testing packages
 setup.bat / run.bat        Windows setup and launch shortcuts
 .streamlit/config.toml    Local server and display settings
-.github/workflows/        Tests to run after publishing to GitHub
+.github/workflows/        Automated tests on pushes and pull requests
 ```
 
 ## Tests and sample regeneration
@@ -216,8 +229,12 @@ Tests cover yearly cost and revenue reconciliation, shared-fix timing, unallocat
 5. Open FAQ opportunities for 2025. Change the success assumption and explain why the estimated hours change while case volumes do not.
 6. Show Data & definitions and explain why each engineering cost is counted once.
 
-## Preparing for GitHub
+## Repository and data privacy
 
-The project includes a `.gitignore` and a test workflow. It has not been pushed to a repository. When you create the repository, publish the source, docs and fictional sample data. Exclude `.venv`, caches, secrets and real customer exports. A local `data/private` folder is already ignored.
+Source code: [krishve/business-lens](https://github.com/krishve/business-lens).
 
-Decide on a license before inviting others to reuse the code. Hosting for multiple users would need authentication, access controls and a review of how uploaded data is kept.
+The repository contains the application, documentation, tests and fictional sample data. GitHub Actions is configured to run the tests on pushes and pull requests.
+
+The `.gitignore` excludes the Python environment, caches, secrets, temporary files and `data/private/`. Keep real customer exports outside the tracked sample folder, and review staged files before committing changes.
+
+No license has been selected yet. Hosting for multiple users would need authentication, access controls and a review of how uploaded data is kept.
